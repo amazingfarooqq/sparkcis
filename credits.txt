@@ -1,0 +1,23 @@
+------------------------------------------
+ CREDITS
+------------------------------------------
+
+    - Bootstrap 5    -    https://getbootstrap.com
+
+    - Font Awesome   -    https://fontawesome.com
+
+    - Orion Icons    -    https://orioniconlibrary.com/
+
+    - Leaflet        -    https://leafletjs.com
+
+    - Swiper         -    https://swiperjs.com/
+
+    - Modal Video    -    https://appleple.github.io/modal-video/
+
+
+
+------------------------------------------
+ IMAGES
+------------------------------------------
+
+    - Free image stocks               -   https://pexels.com
