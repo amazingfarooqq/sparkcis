@@ -24,10 +24,10 @@
   <link rel="shortcut icon" href="img/slogo.png">
 </head>
 
-<body>
+<body id="Top">
   <!-- NAVBAR-->
-  <header class="sticky-top header-animated" style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-light py-1">
+  <header class="sticky-top header-animated" style="background-color: white;" >
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="img/sparkcis-logo.png" alt="..." width="150">
@@ -38,23 +38,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <!-- Link--><a class="nav-link active" href="index.html">Home</a>
+              <!-- Link--><a class="nav-link active" href="#Top">Home</a>
             </li>
             <li class="nav-item">
-              <!-- Link--><a class="nav-link" href="about.html">About us</a>
+              <!-- Link--><a class="nav-link" href="#ServicesSection">Services</a>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
                 data-bs-toggle="dropdown" aria-haspopup="true">Pages</a>
               <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item"
                   href="index.html">Homepage</a><a class="dropdown-item" href="about.html">About us</a><a
                   class="dropdown-item" href="contact.html">Contact us</a></div>
-            </li>
+            </li> -->
             <li class="nav-item me-2">
-              <!-- Link--><a class="nav-link" href="contact.html">Contact us</a>
+              <!-- Link--><a class="nav-link" href="#contactUsSection">Contact us</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Get a
-                quote</button>
+              <!-- <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Get a
+                quote</button> -->
+                <a class="btn btn-primary" href="#contactUsSection">Lets talk</a>
             </li>
           </ul>
         </div>
@@ -125,7 +129,7 @@
     </div>
   </div>
   <!-- HERO SECTION-->
-  <section class="hero hero-home with-pattern d-flex align-items-center py-5">
+  <section class="hero hero-home with-pattern d-flex align-items-center py-5" >
     <div class="container py-5 mt-5">
       <div class="row align-items-center text-center ">
         <div class="col-md-12 mb-5 mb-md-0">
@@ -138,10 +142,15 @@
             </span> in your industry
           </h1>
           <p class="text-muted px-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit qui veniam quis, voluptatibus cumque
-            odio. Laboriosam earum mollitia reprehenderit. Rem ea, nam delectus nesciunt corrupti sint atque laudantium
-            maxime vitae?
+
+            Access 200+ passionate and experienced software engineers with skillsets in 20+ technologies, in your
+            timezone.
+
+
           </p>
+          <div class="mt-4">
+            <a class="btn btn-outline-primary fs-4 rounded-pill  px-5 py-2" href="#contactUsSection">Lets talk »</a>
+          </div>
           <!-- <a class="video-btn d-flex align-items-center" href="#!" data-video-id="B6uuIHpFkuo">
             <span class="video-btn-icon"><i class="fas fa-play"></i></span>
             <div class="ms-3"><span class="text-muted d-block line-height-sm">Watch</span><strong
@@ -221,7 +230,7 @@
       </div>
     </div>
   </section> -->
-  <section class="pb-5">
+  <section class="pb-5" id="ServicesSection">
     <div class="container pb-5">
       <div class="card shadow text-center">
         <div class="card-body p-lg-5">
@@ -245,7 +254,7 @@
                 <p class="text-muted mb-0">
                   You need a website that represents your brand and helps you stand out from the competition.
                 </p>
-                <button class="btn btn-primary mt-3" type="button">Our Work</button>
+                <a class="btn btn-outline-primary btn-large mt-3" href="#!">Learn more »</a>
               </div>
               <div class="col-lg-4">
                 <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light">
@@ -258,7 +267,7 @@
                   We can help you create eye-catching posters that effectively communicate your message and attract
                   attention to your brand.
                 </p>
-                <button class="btn btn-primary mt-3" type="button">Our Work</button>
+                <a class="btn btn-outline-primary btn-large mt-3" href="#!">Learn more »</a>
 
               </div>
               <div class="col-lg-4">
@@ -271,7 +280,7 @@
                 <p class="text-muted mb-0">
                   We can help you create a digital marketing strategy that will help you reach your target audience.
                 </p>
-                <button class="btn btn-primary mt-3" type="button">Our Work</button>
+                <a class="btn btn-outline-primary btn-large mt-3" href="#!">Learn more »</a>
 
               </div>
             </div>
@@ -575,6 +584,102 @@
       </div>
     </div>
   </section>
+
+  <!-- HERO SECTION-->
+  <section class="hero with-pattern py-5 bg-light" id="contactUsSection">
+    <div class="container py-5 my-5">
+      <div class="row">
+        <div class="col-md-7 mx-auto text-center">
+          <p class="h6 text-uppercase text-primary">Contact us</p>
+          <h1>We’d love to hear from you</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT DETAILS SECTION    -->
+  <section class="pulled-up-section">
+    <div class="container text-center">
+      <div class="card shadow with-pattern-full">
+        <div class="card-body py-5 p-md-5 index-forward">
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <div class="icon-block icon-block-lg mx-auto mb-3">
+                <svg class="svg-icon text-primary">
+                  <use xlink:href="#landline-1"> </use>
+                </svg>
+              </div>
+              <h3 class="h4">Phone</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="text-muted"><a class="reset-anchor" href="tel:+001234567890">+ 00 123 456 7890</a></li>
+                <li class="text-muted"><a class="reset-anchor" href="tel:+001234567890">+ 00 123 456 7890</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-block icon-block-lg mx-auto mb-3">
+                <svg class="svg-icon text-primary">
+                  <use xlink:href="#envelope-1"> </use>
+                </svg>
+              </div>
+              <h3 class="h4">Support</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="text-muted"><a class="reset-anchor" href="mailto:iso@company.com">Iso@company.com</a></li>
+                <li class="text-muted"><a class="reset-anchor" href="mailto:iso@support.com">Iso@corporate.com</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-block icon-block-lg mx-auto mb-3">
+                <svg class="svg-icon text-primary">
+                  <use xlink:href="#pin-1"> </use>
+                </svg>
+              </div>
+              <h3 class="h4">Location</h3>
+              <ul class="list-unstyled mb-0 px-5">
+                <li class="text-muted"><a class="reset-anchor" href="#!">1234 New Ave, New York, NY00235, USA</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT FORM SECTION-->
+  <section class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-7 mx-auto text-center mb-5">
+          <h2>Looking for a excellent Business idea?</h2>
+          <p class="text-muted">Seamlessly deliver pandemic e-services and next-generation initiatives.</p><a
+            class="btn btn-primary" href="#!"><i class="fas fa-globe-americas me-2"></i>Get directions</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <form action="#">
+            <div class="row gy-3">
+              <div class="col-lg-4 col-md-6">
+                <input class="form-control form-control-lg" type="text" placeholder="Full name">
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input class="form-control form-control-lg" type="email" placeholder="Email address">
+              </div>
+              <div class="col-lg-4">
+                <input class="form-control form-control-lg" type="text" placeholder="Subject">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="How can we help you"></textarea>
+              </div>
+              <div class="col-12 text-md-center mb-0">
+                <button class="btn btn-primary" type=""> <i class="fas fa-paper-plane me-2"></i>Send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="map-bg">
     <div class="container py-5 border-bottom z-index-20 position-relative">
       <div class="row pt-5 gy-4">
