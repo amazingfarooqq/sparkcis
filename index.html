@@ -26,7 +26,7 @@
 
 <body id="Top">
   <!-- NAVBAR-->
-  <header class="sticky-top header-animated" style="background-color: white;">
+  <header class="sticky-top header-animated " style="background-color: white;">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -38,10 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <!-- Link--><a class="nav-link active" href="#Top">Home</a>
+              <!-- Link--><a class="nav-link active" href="/index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <!-- Link--><a class="nav-link" href="#ServicesSection">Services</a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
+                data-bs-toggle="dropdown" aria-haspopup="true">Services</a>
+              <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./services/web-sites.html">Web Development</a>
+                <a class="dropdown-item" href="./services/data-entry.html">Data Entry</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="about.html">About us</a>
@@ -56,8 +59,7 @@
               <!-- Link--><a class="nav-link" href="#contactUsSection">Contact us</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Get a
-                quote</button>
+              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Lets talk »</button>
               <!-- <a class="btn btn-primary" href="#contactUsSection">Lets talk</a> -->
             </li>
           </ul>
@@ -136,7 +138,7 @@
   </div>
   <!-- HERO SECTION-->
   <section class="hero hero-home with-pattern d-flex align-items-center py-5">
-    <div class="container py-5 mt-5">
+    <div class="container py-1 mt-3">
       <div class="row align-items-center text-center ">
         <div class="col-md-12 mb-5 mb-md-0">
           <h1 class="mb-3 d-block d-md-none" style="font-size: 50px;">
@@ -154,18 +156,18 @@
 
 
           </p>
-          <div class="mt-4">
-            <a class="btn btn-outline-primary fs-4 rounded-pill  px-5 py-2" href="#contactUsSection">Lets talk »</a>
+          <div class="mt-4 d-flex justify-content-center align-items-center">
+            <div class="mx-2">
+              <a class="btn btn-outline-primary fs-4 rounded-pill  px-5 py-2" href="#contactUsSection">Lets talk »</a>
+            </div>
+
+
+            <!-- <a class="video-btn" href="#!" data-video-id="ppCGiyba7kQ">
+              <span class="video-btn-icon"><i class="fas fa-play"></i></span>
+            </a> -->
+
           </div>
-          <!-- <a class="video-btn d-flex align-items-center" href="#!" data-video-id="B6uuIHpFkuo">
-            <span class="video-btn-icon"><i class="fas fa-play"></i></span>
-            <div class="ms-3"><span class="text-muted d-block line-height-sm">Watch</span><strong
-                class="text-uppercase text-dark">Intro Video</strong></div>
-          </a> -->
         </div>
-        <!-- <div class="col-md-5 ml-auto">
-            <div class="img-gradient img-gradient-right"><img class="img-fluid shadow rounded" src="img/hero-img.jpg" alt=""></div>
-          </div> -->
       </div>
     </div>
   </section>
@@ -213,20 +215,19 @@
                 <p class="text-muted mb-0">
                   You need a website that represents your brand and helps you stand out from the competition.
                 </p>
-                <a class="btn btn-outline-primary btn-large mt-3" href="#!">Learn more »</a>
+                <a class="btn btn-outline-primary btn-large mt-3" href="./services/web-sites.html">Learn more »</a>
               </div>
               <div class="col-lg-4">
                 <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light">
                   <use xlink:href="#shield-security-1"> </use>
                 </svg>
                 <h5>
-                  Poster Creation
+                  Data Entry Service
                 </h5>
                 <p class="text-muted mb-0">
-                  We can help you create eye-catching posters that effectively communicate your message and attract
-                  attention to your brand.
+                  We can help you with your data entry needs, so you can focus on growing your business and progress.
                 </p>
-                <a class="btn btn-outline-primary btn-large mt-3" href="#!">Learn more »</a>
+                <a class="btn btn-outline-primary btn-large mt-3" href="./services/data-entry.html">Learn more »</a>
 
               </div>
               <div class="col-lg-4">
@@ -329,6 +330,7 @@
       </div>
     </div>
   </section>
+
   <section class="py-5 bg-primary map-bg text-white">
     <div class="container text-center py-5">
       <div class="row mb-4">
@@ -729,19 +731,31 @@
     </div>
   </section> -->
 
-  <footer class="map-bg">
+  <footer class="map-bg bg-dark mt-5">
     <div class="container border-bottom z-index-20 position-relative text-center">
       <div class="row pt-5 ">
         <div class="col-12">
-          <img class="mb-3" src="img/sparkcis-logo.png" alt="" width="150">
+          <div class="row align-items-center">
+            <div class="col-5 text-end">
+              <img class="mb-3" src="img/slogo.png" alt="" width="100">
+
+            </div>
+            <div class="col-7 text-light text-start">
+              <h1>Sparkcis</h1>
+              <p>Innovate, Transform, Succeed.</p>
+            </div>
+          </div>
           <ul class="list-unstyled text-muted">
             <li><a class="reset-anchor text-sm" href="mailto:farooqdaadkhan@gmail.com">farooq@sparkcis.com</a></li>
             <!-- <li><a class="reset-anchor text-sm" href="tel:+975478985">+02 5478 985</a></li> -->
           </ul>
           <ul class="list-inline text-muted">
-            <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/sparkcis" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/sparkcis" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="https://linkedin.com/company/sparkcis" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/sparkcis"
+                target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/sparkcis"
+                target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://linkedin.com/company/sparkcis"
+                target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
         <!-- <div class="col-lg-3 col-md-6">
