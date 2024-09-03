@@ -15,54 +15,55 @@
   <link rel="stylesheet" href="../css/custom.css">
   <link rel="shortcut icon" href="../img/slogo.png">
 
+  
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="sticky-top header-animated " style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
+  <!-- NAVBAR-->
+  <header class="sticky-top header-animated" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main Navigation">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="../img/sparkcis-logo.png" alt="..." width="150">
+        <!-- Logo with descriptive alt text -->
+        <a class="navbar-brand" href="./../">
+          <img src="./../img/sparkcis-logo.png" alt="SparkCIS - Your Digital Transformation Partner" width="150">
         </a>
-        <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+        <!-- Toggle button for mobile view with descriptive label -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navigation menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link " href="/index.html">Home</a>
+              <!-- Active link to the homepage with an accessible label -->
+              <a class="nav-link" href="./../index.html" aria-current="page">Home</a>
             </li>
-            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" href="#"
-                data-bs-toggle="dropdown" aria-haspopup="true">Services</a>
+            <li class="nav-item dropdown">
+              <!-- Dropdown for Services with accessible label -->
+              <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
               <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="./web-sites.html">Web Development</a>
-                <a class="dropdown-item bg-dark py-2" href="#">Data Entry</a>
+                <a class="dropdown-item bg-dark py-2" href="./data-entry.html">Data Entry</a>
+              </div>
             </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="/contact.html">Contact us</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
-              </li> -->
-            <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
-                  data-bs-toggle="dropdown" aria-haspopup="true">Pages</a>
-                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item"
-                    href="index.html">Homepage</a><a class="dropdown-item" href="about.html">About us</a><a
-                    class="dropdown-item" href="contact.html">Contact us</a></div>
-              </li> -->
-            <!-- <li class="nav-item me-2">
-                <a class="nav-link" href="#contactUsSection">Contact us</a>
-            </li> -->
             <li class="nav-item">
-              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Lets talk
-                »</button>
-              <!-- <a class="btn btn-primary" href="#contactUsSection">Lets talk</a> -->
+              <!-- Contact link with accessible label -->
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Call-to-action button with descriptive text -->
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Let's Talk »</button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
   <!-- GET a QUOTE MODAL -->
   <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -137,7 +138,7 @@
 
   <section class="py-5  bg-primary text-white with-pattern-full" >
     <div class="container py-5">
-      <div class="row align-items-center text-center py-4 ">
+      <div class="row align-items-center text-center py-4 " data-aos="fade-down">
         <div class="ms-3">
           <h1 class=" d-block d-md-none text-light fw-bold" style="font-size: 40px;">Data Is The New Oil</h1>
           <h1 class=" d-none d-md-block text-light fw-bold" style="font-size: 80px;">Data Is The New Oil</h1>
@@ -764,6 +765,12 @@
     injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
 
   </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">

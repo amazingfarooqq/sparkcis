@@ -20,18 +20,18 @@
   <!-- Open Graph Tags for Social Media -->
   <meta property="og:title" content="Web Development Services | SparkCIS">
   <meta property="og:description" content="SparkCIS - Your go-to partner for professional web development services. Explore our custom solutions today.">
-  <meta property="og:image" content="https://www.yourwebsite.com/img/slogo.png">
-  <meta property="og:url" content="https://www.yourwebsite.com/">
+  <meta property="og:image" content="/img/sparkcis-logo.png">
+  <meta property="og:url" content="https://sparkcis.vercel.app/">
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Web Development Services | SparkCIS">
   <meta name="twitter:description" content="Explore SparkCIS's professional web development services. Get in touch for a custom solution.">
-  <meta name="twitter:image" content="https://www.yourwebsite.com/img/slogo.png">
+  <meta name="twitter:image" content="/img/sparkcis-logo.png">
 
   <!-- Canonical Link -->
-  <link rel="canonical" href="https://www.yourwebsite.com/">
+  <link rel="canonical" href="https://sparkcis.vercel.app/">
   
   <!-- Swiper slider -->
   <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
@@ -61,102 +61,102 @@
 
 <body id="Top">
   <!-- NAVBAR-->
-  <header class="sticky-top header-animated " style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
+  <header class="sticky-top header-animated" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main Navigation">
       <div class="container">
+        <!-- Logo with descriptive alt text -->
         <a class="navbar-brand" href="index.html">
-          <img src="img/sparkcis-logo.png" alt="..." width="150">
+          <img src="img/sparkcis-logo.png" alt="SparkCIS - Your Digital Transformation Partner" width="150">
         </a>
-        <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+        <!-- Toggle button for mobile view with descriptive label -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navigation menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <!-- Link--><a class="nav-link active" href="/index.html">Home</a>
+              <!-- Active link to the homepage with an accessible label -->
+              <a class="nav-link active" href="/index.html" aria-current="page">Home</a>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
-                data-bs-toggle="dropdown" aria-haspopup="true">Services</a>
+            <li class="nav-item dropdown">
+              <!-- Dropdown for Services with accessible label -->
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
               <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="./services/web-sites.html">Web Development</a>
                 <a class="dropdown-item" href="./services/data-entry.html">Data Entry</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="/contact.html">Contact us</a>
+              </div>
             </li>
             <li class="nav-item">
-              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Lets talk »</button>
-              <!-- <a class="btn btn-primary" href="#contactUsSection">Lets talk</a> -->
+              <!-- Contact link with accessible label -->
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Call-to-action button with descriptive text -->
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Let's Talk »</button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+  
   <!-- GET a QUOTE MODAL -->
-  <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
+  <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteFormLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content p-md-3">
         <div class="modal-header border-0">
-          <h4 class="modal-title">Request a <span class="text-primary">quote</span></h4>
+          <!-- Updated modal title ID for accessibility -->
+          <h4 class="modal-title" id="quoteFormLabel">Request a <span class="text-primary">quote</span></h4>
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-          
         </div>
         <div class="modal-body">
-          <p>Enter your details and someone from our team will reach out to find a time to connect with you.</p>
+          <p id="quoteFormDescription">Enter your details and someone from our team will reach out to find a time to connect with you.</p>
+          
+          <!-- Updated form with accessible attributes -->
           <form method="post"
             action="https://script.google.com/macros/s/AKfycbxOv-sRrPq67Ribzln8u372JuYS4KbeXNglqnmqHHPSfswe5jnaohtC-aCps3Tabm_V/exec"
-            name="contact-form">
+            name="contact-form" aria-labelledby="quoteFormLabel" aria-describedby="quoteFormDescription">
+            
             <div class="row gy-3">
               <div class="col-lg-6">
-                <label class="form-label text-sm" for="firstname">First name<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <input class="form-control" id="firstname" name="fname" type="text" placeholder="Enter your first name"
-                  required>
+                <label class="form-label text-sm" for="firstname">First name<span class="text-primary ms-1">&#42;</span></label>
+                <input class="form-control" id="firstname" name="fname" type="text" placeholder="Enter your first name" required>
               </div>
               <div class="col-lg-6">
-                <label class="form-label text-sm" for="lastname">Last name<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <input class="form-control" id="lastname" name="lname" type="text" placeholder="Enter your last name"
-                  required>
+                <label class="form-label text-sm" for="lastname">Last name<span class="text-primary ms-1">&#42;</span></label>
+                <input class="form-control" id="lastname" name="lname" type="text" placeholder="Enter your last name" required>
               </div>
               <div class="col-lg-12">
-                <label class="form-label text-sm" for="email">Email address<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <input class="form-control" id="email" type="email" name="email" placeholder="Enter your email address"
-                  required>
+                <label class="form-label text-sm" for="email">Email address<span class="text-primary ms-1">&#42;</span></label>
+                <input class="form-control" id="email" type="email" name="email" placeholder="Enter your email address" required>
               </div>
               <div class="col-lg-6">
-                <label class="form-label text-sm" for="phone">Phone number <small
-                    class="fw-light small text-gray">optional</small></label>
+                <label class="form-label text-sm" for="phone">Phone number <small class="fw-light small text-gray">optional</small></label>
                 <input class="form-control" id="phone" type="tel" name="phone" placeholder="Enter your phone number">
               </div>
               <div class="col-lg-6">
-                <label class="form-label text-sm" for="projecttype">Project type<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <input class="form-control" id="projecttype" type="text" name="projectType"
-                  placeholder="Enter your project type" required>
+                <label class="form-label text-sm" for="projecttype">Project type<span class="text-primary ms-1">&#42;</span></label>
+                <input class="form-control" id="projecttype" type="text" name="projectType" placeholder="Enter your project type" required>
               </div>
               <div class="col-lg-6">
-                <label class="form-label text-sm" for="budget">Estimated budget<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <input class="form-control" id="budget" type="text" placeholder="Enter your estimated budget" required
-                  name="EstimatedBughet"><small class="form-text text-gray-500 ms-3">Project budget in $</small>
+                <label class="form-label text-sm" for="budget">Estimated budget<span class="text-primary ms-1">&#42;</span></label>
+                <input class="form-control" id="budget" type="text" placeholder="Enter your estimated budget" required name="EstimatedBudget">
+                <small class="form-text text-gray-500 ms-3">Project budget in $</small>
               </div>
               <div class="col-lg-6">
-                <label class="form-label text-sm" for="timeframe">Time frame<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <input class="form-control" id="timeframe" name="TimeFrame" type="text"
-                  placeholder="Maximum time for the project" required>
+                <label class="form-label text-sm" for="timeframe">Time frame<span class="text-primary ms-1">&#42;</span></label>
+                <input class="form-control" id="timeframe" name="TimeFrame" type="text" placeholder="Maximum time for the project" required>
               </div>
               <div class="col-lg-12">
-                <label class="form-label text-sm" for="projectdetail">Project details<span
-                    class="text-primary ms-1">&#42;</span></label>
-                <textarea class="form-control" id="projectdetail" rows="5"
-                  placeholder="Provide a short brief about your project" name="projectdetail" required></textarea>
+                <label class="form-label text-sm" for="projectdetail">Project details<span class="text-primary ms-1">&#42;</span></label>
+                <textarea class="form-control" id="projectdetail" rows="5" placeholder="Provide a short brief about your project" name="projectdetail" required></textarea>
               </div>
               <div class="col-lg-12">
-                <button class="btn btn-primary" type="submit" id="submit">Submit your request</button>
+                <!-- Descriptive submission button -->
+                <button class="btn btn-primary" type="submit" id="submit" aria-label="Submit quote request form">Submit your request</button>
               </div>
             </div>
           </form>
@@ -164,76 +164,102 @@
       </div>
     </div>
   </div>
+  
   <!-- HERO SECTION-->
-  <section class="hero hero-home with-pattern d-flex align-items-center py-5" >  
+  <section class="hero hero-home with-pattern d-flex align-items-center py-5" aria-labelledby="hero-title">  
     <div class="container py-1 mt-3">
-      <div class="row align-items-center text-center ">
+      <div class="row align-items-center text-center">
         <div class="col-md-12 mb-5 mb-md-0">
           <div data-aos="fade-down">
-
-            <h1 class="mb-3 d-block d-md-none" style="font-size: 50px;">
+  
+            <!-- Heading with accessible aria-label -->
+            <h1 class="mb-3 d-block d-md-none" style="font-size: 50px;" id="hero-title">
               Be the <span class="text-primary">market leader </span> in your industry
             </h1>
-            <h1 class="mb-3 d-none d-md-block" style="font-size: 90px;">Be the
-              <span class="text-primary">market leader
-                <br>
-              </span> in your industry
+            <h1 class="mb-3 d-none d-md-block" style="font-size: 90px;">
+              Be the <span class="text-primary">market leader<br></span> in your industry
             </h1>
-            <p class="text-muted px-5">Access 200+ passionate and experienced software engineers with skillsets in 20+ technologies, in your timezone.</p>
+            
+            <!-- Ensure the text is clear and descriptive -->
+            <p class="text-muted px-5" id="hero-description">Access 200+ passionate and experienced software engineers with skillsets in 20+ technologies, in your timezone.</p>
           </div>
           <div class="mt-4 d-flex justify-content-center align-items-center">
             <div class="mx-2">
-              <a class="btn btn-outline-primary fs-4 rounded-pill  px-5 py-2" href="/contact.html">Lets talk »</a>
+              <!-- Accessible link with descriptive text -->
+              <a class="btn btn-outline-primary fs-4 rounded-pill px-5 py-2" href="/contact.html" aria-label="Contact us to discuss your project">Let's talk »</a>
             </div>
-
-
-            <!-- <a class="video-btn" href="#!" data-video-id="ppCGiyba7kQ">
+  
+            <!-- Commented out video button for now -->
+            <!-- 
+            <a class="video-btn" href="#!" data-video-id="ppCGiyba7kQ" aria-label="Watch our introduction video">
               <span class="video-btn-icon"><i class="fas fa-play"></i></span>
-            </a> -->
-
+            </a> 
+            -->
+  
           </div>
         </div>
       </div>
     </div>
   </section>
+  
   <!-- PARTNERS SECTION            -->
-  <section>
+  <section aria-labelledby="partner-logos">
     <div class="container">
       <div class="row align-items-center justify-content-center">
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-1.png"
-            alt="" height="25"></div>
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-2.png"
-            alt="" height="25"></div>
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-3.png"
-            alt="" height="25"></div>
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-4.png"
-            alt="" height="25"></div>
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-5.png"
-            alt="" height="25"></div>
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-6.png"
-            alt="" height="25"></div>
+        
+        <!-- Descriptive alt text for logos -->
+        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <img class="d-block mx-auto partner" src="img/logo-1.png" alt="Partner 1 Logo" height="25">
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <img class="d-block mx-auto partner" src="img/logo-2.png" alt="Partner 2 Logo" height="25">
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <img class="d-block mx-auto partner" src="img/logo-3.png" alt="Partner 3 Logo" height="25">
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <img class="d-block mx-auto partner" src="img/logo-4.png" alt="Partner 4 Logo" height="25">
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <img class="d-block mx-auto partner" src="img/logo-5.png" alt="Partner 5 Logo" height="25">
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <img class="d-block mx-auto partner" src="img/logo-6.png" alt="Partner 6 Logo" height="25">
+        </div>
+        
       </div>
     </div>
   </section>
+  
 
-  <section class="py-5" id="ServicesSection">
+  <section class="py-5" id="ServicesSection" aria-labelledby="services-title">
     <div class="container pb-5">
       <div class="card shadow text-center">
         <div class="card-body p-lg-5">
           <div class="p-4">
+            
+            <!-- Services Title -->
             <div class="row mb-5">
               <div class="col-lg-7 mx-auto">
-                <p class="h6 text-primary text-uppercase">Services</p>
-                <h2 data-aos="fade-up">What determined that you are our target audience</h2>
+                <p class="h6 text-primary text-uppercase" id="services-title">Services</p>
+                <h2 data-aos="fade-up">What makes you our target audience?</h2>
                 <p class="text-muted">
-                  We offer a wide range of services to help you grow your business. Whether you need a new website or
-                  help with your digital marketing strategy, we can help you reach your goals.
+                  We offer a wide range of services to help you grow your business. Whether you need a new website or help with your digital marketing strategy, we can help you reach your goals.
                 </p>
               </div>
             </div>
+            
+            <!-- Service Cards -->
             <div class="row gy-3" data-aos="fade-up">
-              <div class="col-lg-4" >
-                <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light">
+              
+              <!-- Website Development -->
+              <div class="col-lg-4">
+                <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light" aria-hidden="true">
                   <use xlink:href="#quality-1"> </use>
                 </svg>
                 <h5>Website Development</h5>
@@ -242,63 +268,66 @@
                 </p>
                 <a class="btn btn-outline-primary btn-large mt-3" href="./services/web-sites.html">Learn more »</a>
               </div>
+              
+              <!-- Data Entry Service -->
               <div class="col-lg-4">
-                <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light">
+                <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light" aria-hidden="true">
                   <use xlink:href="#shield-security-1"> </use>
                 </svg>
-                <h5>
-                  Data Entry Service
-                </h5>
+                <h5>Data Entry Service</h5>
                 <p class="text-muted mb-0">
                   We can help you with your data entry needs, so you can focus on growing your business and progress.
                 </p>
                 <a class="btn btn-outline-primary btn-large mt-3" href="./services/data-entry.html">Learn more »</a>
-
               </div>
+              
+              <!-- Digital Marketing -->
               <div class="col-lg-4">
-                <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light">
+                <svg class="svg-icon text-primary mb-4 svg-icon-big svg-icon-light" aria-hidden="true">
                   <use xlink:href="#sales-up-1"> </use>
                 </svg>
-                <h5>
-                  Digital Marketing
-                </h5>
+                <h5>Digital Marketing</h5>
                 <p class="text-muted mb-0">
                   We can help you create a digital marketing strategy that will help you reach your target audience.
                 </p>
                 <a class="btn btn-outline-primary btn-large mt-3" href="#!">Learn more »</a>
-
               </div>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
-  <section class="py-5">
+  <section class="py-5" aria-labelledby="team-intro">
     <div class="container py-5">
       <div class="row">
+        <!-- Title Section -->
         <div class="col-lg-6">
-          <h2>We are a dynamic team of creatives people of innovation & Marketing Expert.</h2>
+          <h2 id="team-intro">We are a dynamic team of creative professionals in Innovation & Marketing.</h2>
         </div>
+        
+        <!-- Description Section -->
         <div class="col-lg-6">
           <p class="text-muted">
-            We are a team of talented professionals with a wide range of skills and experience. We love what we do, and
-            we do it with passion. We look forward to working with you.
+            Our team comprises talented professionals with diverse skills and extensive experience in creative design, innovation, and marketing. We are passionate about what we do and are excited to bring that passion to your projects.
           </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- <section class="pb-5">
+  
+  <section class="pb-5">
     <div class="container pb-5">
       <div class="row gy-3">
         <div class="col-lg-4">
           <div class="d-flex">
             <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
             <div class="ms-3">
-              <h5>Quality coordinator</h5>
-              <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+              <h5>Responsive Web Design</h5>
+              <p class="text-sm text-muted">We craft websites that look great on any device, ensuring a seamless user experience.</p>
             </div>
           </div>
         </div>
@@ -306,8 +335,8 @@
           <div class="d-flex">
             <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
             <div class="ms-3">
-              <h5>Financing management</h5>
-              <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+              <h5>SEO Optimization</h5>
+              <p class="text-sm text-muted">Our SEO strategies help your website rank higher in search results, driving more traffic to your business.</p>
             </div>
           </div>
         </div>
@@ -315,95 +344,94 @@
           <div class="d-flex">
             <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
             <div class="ms-3">
-              <h5>Insurance invest</h5>
-              <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+              <h5>Custom Web Development</h5>
+              <p class="text-sm text-muted">We develop tailored web solutions that meet your specific business needs and goals.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+  
 
   <section class="pb-5" data-aos="fade-up">
     <div class="container pb-5">
       <div class="row">
+        <!-- Website Development -->
         <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
           <div class="numeric-block order-2 order-lg-1 mb-lg-5">
             <div class="numeric-block-count">1</div>
             <p class="text-muted text-uppercase mb-2">Website Development</p>
-            <h3 data-aos="fade-right">We help you provide a digital presence</h3>
+            <h3 data-aos="fade-right">Elevate Your Online Presence</h3>
             <p class="text-muted py-3">
-              We can help you create a website that represents your brand and helps you stand out from the competition.
-            </p><a class="btn btn-primary" href="#!">View details</a>
-          </div><img data-aos="fade-right" class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0"
-            src="img/demo-img-6.jpg" alt="">
+              We specialize in creating custom websites that reflect your brand's identity, ensuring a strong online presence that sets you apart from competitors.
+            </p>
+            <a class="btn btn-primary" href="#!">View details</a>
+          </div>
+          <img data-aos="fade-right" class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0"
+            src="img/demo-img-6.jpg" alt="Custom Website Development">
         </div>
-        <div class="col-lg-5 mx-auto d-flex flex-column"><img data-aos="fade-left" class="flex-grow-0 img-fluid shadow rounded mb-5"
-            src="img/demo-img-2.jpg" alt="">
+  
+        <!-- Poster Creation -->
+        <div class="col-lg-5 mx-auto d-flex flex-column">
+          <img data-aos="fade-left" class="flex-grow-0 img-fluid shadow rounded mb-5"
+            src="img/demo-img-2.jpg" alt="Creative Poster Design">
           <div class="numeric-block">
             <div class="numeric-block-count">2</div>
             <p class="text-muted text-uppercase mb-2">Poster Creation</p>
-            <h3>
-              We help you create eye-catching posters
-            </h3>
+            <h3>Create Impactful Visuals</h3>
             <p class="text-muted py-3">
-              We can help you create eye-catching posters that effectively communicate your message and attract
-              attention to your brand.
-            </p><a class="btn btn-primary" href="#!">View details</a>
+              Our team designs eye-catching posters that effectively convey your message and capture attention, helping you to promote your brand or event with maximum impact.
+            </p>
+            <a class="btn btn-primary" href="#!">View details</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
-  <section class="py-5 bg-primary map-bg text-white" >
-    <div class="container text-center" >
+  <section class="py-5 bg-primary map-bg text-white">
+    <div class="container text-center">
       <div class="row mb-4">
         <div class="col-lg-7 mx-auto" data-aos="fade-up">
-          <p class="h6 text-uppercase">Work process</p>
-          <h2>We complete every project with experience hand</h2>
+          <p class="h6 text-uppercase">Our Work Process</p>
+          <h2>Every Project Completed with Expertise and Care</h2>
           <p>
-            We are a team of talented professionals with a wide range of skills and experience. We love what we do, and
-            we do it with passion. We look forward to working with you.
+            Our team of skilled professionals brings a wealth of experience and passion to every project. We are dedicated to delivering high-quality results that meet your needs and exceed your expectations.
           </p>
         </div>
       </div>
       <div class="row" data-aos="fade-up">
-        <div class="col-lg-4" >
-          <div class="card border-0 card-hover-bg" >
+        <!-- Idea -->
+        <div class="col-lg-4">
+          <div class="card border-0 card-hover-bg">
             <div class="card-body p-lg-5">
-              <!-- <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
-                <use xlink:href="#mental-health-1"> </use>
-              </svg> -->
-              <h4>Idea </h4>
-              <p class="text-sm mb-0" >
-                Idea is the first step in the process. We work with you to develop a clear idea of what you want.
+              <h4>Idea</h4>
+              <p class="text-sm mb-0">
+                The first step in our process is to collaborate with you to develop a clear and compelling idea that aligns with your goals.
               </p>
             </div>
           </div>
         </div>
+        <!-- Wireframing -->
         <div class="col-lg-4">
           <div class="card border-0 card-hover-bg">
             <div class="card-body p-lg-5">
-              <!-- <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
-                <use xlink:href="#paper-stack-1"> </use>
-              </svg> -->
-              <h4>Wireframing </h4>
+              <h4>Wireframing</h4>
               <p class="text-sm mb-0">
-                Wireframing is the next step. We create a wireframe of your website to help you visualize the layout.
+                Next, we create detailed wireframes to help you visualize the structure and flow of your website before development begins.
               </p>
             </div>
           </div>
         </div>
+        <!-- Development -->
         <div class="col-lg-4">
           <div class="card border-0 card-hover-bg">
             <div class="card-body p-lg-5">
-              <!-- <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
-                <use xlink:href="#design-1"> </use>
-              </svg> -->
-              <h4>Development </h4>
+              <h4>Development</h4>
               <p class="text-sm mb-0">
-                Development is the final step. We build your website according to the wireframe and your specifications.
+                Finally, we bring the wireframe to life, building your website with precision and according to your specifications, ensuring it meets all your requirements.
               </p>
             </div>
           </div>
@@ -411,6 +439,7 @@
       </div>
     </div>
   </section>
+  
   <!-- <section class="py-5">
     <div class="container py-5">
       <div class="row text-center mb-5">

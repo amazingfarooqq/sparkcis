@@ -11,58 +11,63 @@
   <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;font-display=swap">
   <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
-  
+
   <link rel="stylesheet" href="../css/custom.css">
   <link rel="shortcut icon" href="../img/slogo.png">
 
+  
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="sticky-top header-animated " style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
+  <!-- NAVBAR-->
+  <header class="sticky-top header-animated" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main Navigation">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="../img/sparkcis-logo.png" alt="..." width="150">
+        <!-- Logo with descriptive alt text -->
+        <a class="navbar-brand" href="./../">
+          <img src="./../img/sparkcis-logo.png" alt="SparkCIS - Your Digital Transformation Partner" width="150">
         </a>
-        <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- Toggle button for mobile view with descriptive label -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
+              <!-- Active link to the homepage with an accessible label -->
+              <a class="nav-link" href="./../index.html" aria-current="page">Home</a>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" href="#"
-                data-bs-toggle="dropdown" aria-haspopup="true">Services</a>
+            <li class="nav-item dropdown">
+              <!-- Dropdown for Services with accessible label -->
+              <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Services</a>
               <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item  bg-dark py-2" href="#">Web Development</a>
-                <a class="dropdown-item" href="./data-entry.html">Data Entry</a>
+                <a class="dropdown-item bg-dark py-2" href="./data-entry.html">Web Development</a>
+                <a class="dropdown-item " href="./data-entry.html">Data Entry</a>
+              </div>
             </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="/contact.html">Contact us</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
-              </li> -->
-            <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
-                  data-bs-toggle="dropdown" aria-haspopup="true">Pages</a>
-                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item"
-                    href="index.html">Homepage</a><a class="dropdown-item" href="about.html">About us</a><a
-                    class="dropdown-item" href="contact.html">Contact us</a></div>
-              </li> -->
-            <!-- <li class="nav-item me-2">
-              <a class="nav-link" href="#contactUsSection">Contact us</a>
-            </li> -->
             <li class="nav-item">
-              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Lets talk
-                »</button>
-              <!-- <a class="btn btn-primary" href="#contactUsSection">Lets talk</a> -->
+              <!-- Contact link with accessible label -->
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- Call-to-action button with descriptive text -->
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Let's
+                Talk »</button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
+
   <!-- GET a QUOTE MODAL -->
   <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -70,7 +75,7 @@
         <div class="modal-header border-0">
           <h4 class="modal-title">Request a <span class="text-primary">quote</span></h4>
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-          
+
         </div>
         <div class="modal-body">
           <p>Enter your details and someone from our team will reach out to find a time to connect with you.</p>
@@ -137,7 +142,7 @@
 
   <section class="py-5 bg-primary text-white with-pattern-full">
     <div class="container py-4">
-      <div class="row align-items-center text-center py-4 ">
+      <div class="row align-items-center text-center py-4 " data-aos="fade-down">
         <div class="ms-3">
           <h1 class=" d-block d-md-none text-light fw-bold" style="font-size: 40px;">Web Development</h1>
           <h1 class=" d-none d-md-block text-light fw-bold" style="font-size: 80px;">Web Development</h1>
@@ -150,8 +155,8 @@
   <!-- HERO SECTION-->
   <section class="hero with-pattern pt-5 bg-light">
     <div class="container py-5 my-5">
-      <div class="row mb-4">
-        <div class="col-md-12">
+      <div class="row mb-4" >
+        <div class="col-md-12" >
           <p class="h6 text-uppercase text-primary">Website Development</p>
           <h1>Service Description</h1>
           <p class="text-muted py-0 my-2">We offer Web Development Services to businesses of all sizes to give them a
@@ -388,10 +393,12 @@
     <div class="container py-5 z-index-20">
       <div class="row text-center">
         <div class="col-lg-7 mx-auto">
-          <h2 class="mb-4">Ready to accelerate your software development?          </h2>
-          <p class=" mb-0">Take the first step towards a brighter future and supercharge your business with cutting-edge technologies, expert guidance, and unparalleled support.
+          <h2 class="mb-4">Ready to accelerate your software development? </h2>
+          <p class=" mb-0">Take the first step towards a brighter future and supercharge your business with cutting-edge
+            technologies, expert guidance, and unparalleled support.
           </p>
-          <button class="fs-2 btn btn-dark mt-4" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Lets talk about your project » </button>
+          <button class="fs-2 btn btn-dark mt-4" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Lets
+            talk about your project » </button>
         </div>
       </div>
     </div>
@@ -526,6 +533,12 @@
     // pls don't forget to change to your domain :)
     injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
 
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
   </script>
   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
