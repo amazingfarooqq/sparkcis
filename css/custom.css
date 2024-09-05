@@ -1,17 +1,45 @@
-/* Add this CSS to your stylesheet */
-#notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    padding: 15px;
-    border-radius: 5px;
-    display: none; /* Hidden by default */
-    z-index: 1000; /* Ensure it appears above other content */
-    font-family: Arial, sans-serif;
+#notification-success, #notification-error {
+  position: fixed;
+  top: -100px; /* Start above the viewport */
+  left: 20px;
+  color: white; /* White text */
+  padding: 15px;
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+  z-index: 111111; /* Ensure it appears above other content */
+  font-family: Arial, sans-serif;
+  transition: top 0.5s ease-out;
+}
+
+#notification-error {
+  background-color: #f44336; /* Red background */
+}
+
+#notification-success {
+  background-color: #4CAF50; /* Green background */
+}
+
+/* Animation to slide down */
+@keyframes slideDown {
+  0% {
+      top: -100px; /* Start above the viewport */
   }
-  
+  100% {
+      top: 20px; /* End at the desired position */
+  }
+}
+
+/* Show the notification with the animation */
+#notification-success.show {
+  display: block; /* Make it visible */
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+#notification-error.show {
+  display: block; /* Make it visible */
+  animation: slideDown 0.5s ease-out forwards;
+}
+
 
   .hero-title {
     font-size: 50px;
