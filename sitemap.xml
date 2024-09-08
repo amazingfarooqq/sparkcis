@@ -3,7 +3,7 @@
 
   <!-- Home Page -->
   <url>
-    <loc>https://sparkcis.vercel.app/</loc>
+    <loc>https://sparkcis.com/</loc>
     <lastmod>2024-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://sparkcis.vercel.app/contact.html</loc>
+    <loc>https://sparkcis.com/contact.html</loc>
     <lastmod>2024-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
   <!-- Data Entry Services Page -->
   <url>
-    <loc>https://sparkcis.vercel.app/services/data-entry.html</loc>
+    <loc>https://sparkcis.com/services/data-entry.html</loc>
     <lastmod>2024-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- Web Development Services Page -->
   <url>
-    <loc>https://sparkcis.vercel.app/services/web-sites.html</loc>
+    <loc>https://sparkcis.com/services/web-sites.html</loc>
     <lastmod>2024-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
