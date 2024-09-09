@@ -30,39 +30,61 @@
   <div id="notification-error">Oops! There was a problem.</div>
 
   <!-- NAVBAR-->
-  <header class="sticky-top header-animated " style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/sparkcis-logo.png" alt="..." width="150">
-        </a>
-        <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="/index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#"
-                data-bs-toggle="dropdown" aria-haspopup="true">Services</a>
-              <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./services/web-sites.html">Web Development</a>
-                <a class="dropdown-item" href="./services/data-entry.html">Data Entry</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link active" href="#">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <button class="btn btn-primary" type="button" data-bs-target="#quoteForm" data-bs-toggle="modal">Let's Talk »</button>
+  <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" aria-label="Main Navigation"
+  style="background-color: white;">
+  <div class="container">
+    <a class="navbar-brand" href="./../">
+      <img src="./../img/sparkcis-logo.png" alt="SparkCIS - Your Digital Transformation Partner" width="150">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            </li>
-          </ul>
-        </div>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./../">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our plans</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a class="dropdown-item " href="./services/web-sites.html">Web Development</a>
+              <a class="dropdown-item" href="./services/web-sites.html">Mobile Application</a>
+              <a class="dropdown-item" href="./services/web-sites.html">Blockchain Solutions</a>
+              <a class="dropdown-item" href="./services/web-sites.html">AI Solution and Automation</a>
+              <a class="dropdown-item" href="./services/web-sites.html">Cloud Services</a>
+              <a class="dropdown-item" target="_blank" href="https://dataentry.sparkcis.com/">Data Entry</a>
+              <a class="dropdown-item" href="./services/data-entry.html">Data Scannig</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold active" href="#">Contact</a>
+        </li>
+        <li class="nav-item d-md-none">
+          <!-- Call-to-action button with descriptive text -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Schedule
+            Free Strategy Call →</button>
+        </li>
+      </ul>
+      <div class="d-none d-md-block">
+        <!-- Call-to-action button with descriptive text -->
+        <button class="btn btn-primary fs-5" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Schedule
+          Free Strategy Call →</button>
       </div>
-    </nav>
-  </header>
-
+    </div>
+  </div>
+</nav>
   <!-- HERO SECTION-->
   <section class="py-5  bg-primary text-white with-pattern-full">
     <div class="container py-5">
@@ -164,7 +186,7 @@
             </div>
           </div>
           <ul class="list-unstyled text-muted">
-            <li><a class="reset-anchor text-sm" href="mailto:farooqdaadkhan@gmail.com">farooq@sparkcis.com</a></li>
+            <li><a class="reset-anchor text-sm" href="mailto:contact@sparkcis.com">contact@sparkcis.com</a></li>
             <!-- <li><a class="reset-anchor text-sm" href="tel:+975478985">+02 5478 985</a></li> -->
           </ul>
           <ul class="list-inline text-muted">
@@ -226,6 +248,7 @@
   <script src="js/front.js"></script>
   <script src="js/leaflet.js"></script>
   <script src="js/form-code.js"></script>
+  <script src="js/custom-js.js"></script>
   <script>
     // ------------------------------------------------------- //
     //   Inject SVG Sprite - 
