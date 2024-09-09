@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Optimized Title -->
-  <title>Website Design and Development Services | SparkCIS </title>
+  <title>Website and Software Devenlopment Agency | SparkCIS </title>
 
   <!-- Optimized Meta Description -->
   <meta name="description"
@@ -59,6 +59,9 @@
 
   <!-- AOS (Animate on Scroll) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+
+  </style>
 </head>
 
 
@@ -67,52 +70,61 @@
   <div id="notification-success">Thank you! Your form is submitted successfully.</div>
   <div id="notification-error">Oops! Something went wrong.</div>
 
-  <!-- NAVBAR-->
-  <header class="sticky-top header-animated" style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main Navigation">
-      <div class="container">
-        <!-- Logo with descriptive alt text -->
-        <a class="navbar-brand" href="index.html">
-          <img src="img/sparkcis-logo.png" alt="SparkCIS - Your Digital Transformation Partner" width="150">
-        </a>
+  <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" aria-label="Main Navigation"
+    style="background-color: white;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./../img/sparkcis-logo.png" alt="SparkCIS - Your Digital Transformation Partner" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Toggle button for mobile view with descriptive label -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation menu -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <!-- Active link to the homepage with an accessible label -->
-              <a class="nav-link active" href="/index.html" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <!-- Dropdown for Services with accessible label -->
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Services</a>
-              <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our plans</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu">
+              <div class="dropdown-grid">
                 <a class="dropdown-item" href="./services/web-sites.html">Web Development</a>
-                <a class="dropdown-item" href="./services/data-entry.html">Data Entry</a>
+                <a class="dropdown-item" href="./services/web-sites.html">Mobile Application</a>
+                <a class="dropdown-item" href="./services/web-sites.html">Blockchain Solutions</a>
+                <a class="dropdown-item" href="./services/web-sites.html">AI Solution and Automation</a>
+                <a class="dropdown-item" href="./services/web-sites.html">Cloud Services</a>
+                <a class="dropdown-item" target="_blank" href="https://dataentry.sparkcis.com/">Data Entry</a>
+                <a class="dropdown-item" href="./services/data-entry.html">Data Scannig</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <!-- Contact link with accessible label -->
-              <a class="nav-link" href="/contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <!-- Call-to-action button with descriptive text -->
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Let's
-                Talk »</button>
-            </li>
-          </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <!-- Call-to-action button with descriptive text -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Schedule
+              Free Strategy Call →</button>
+          </li>
+        </ul>
+        <div class="d-none d-md-block">
+          <!-- Call-to-action button with descriptive text -->
+          <button class="btn btn-primary fs-5" type="button" data-bs-toggle="modal" data-bs-target="#quoteForm">Schedule
+            Free Strategy Call →</button>
         </div>
       </div>
-    </nav>
-  </header>
-
+    </div>
+  </nav>
 
 
   <!-- GET a QUOTE MODAL -->
@@ -196,8 +208,8 @@
   </div>
 
   <!-- HERO SECTION-->
-  <section class="hero hero-home with-pattern d-flex align-items-center py-5" aria-labelledby="hero-title">
-    <div class="container py-1 mt-3">
+  <section class="hero hero-home with-pattern d-flex align-items-center py-5 bg-light" aria-labelledby="hero-title">
+    <div class="container py-1 my-3 mb-5">
       <div class="row align-items-center text-center">
         <div class="col-md-12 mb-5 mb-md-0">
           <div data-aos="fade-down">
@@ -208,8 +220,12 @@
             </h1>
 
             <!-- Ensure the text is clear and descriptive -->
-            <p class="text-muted px-5" id="hero-description">Access 200+ passionate and experienced software engineers
-              with skillsets in 20+ technologies, in your timezone.</p>
+            <p class="fs-5 py-2" id="hero-description">
+              <span class="mx-lg-5">Access 200+ passionate and experienced software engineers
+                with skillsets in 20+ technologies, in your timezone.</span>
+            </p>
+
+
           </div>
           <div class="mt-4 d-flex justify-content-center align-items-center">
             <div class="mx-2">
@@ -232,17 +248,12 @@
   </section>
 
   <!-- PARTNERS SECTION            -->
-  <section aria-labelledby="partner-logos" class="py-5">
+  <section aria-labelledby="partner-logos" class="py-5 border-top border-bottom">
     <div class="container">
       <div class="row align-items-center justify-content-center">
 
-        <!-- Descriptive alt text for logos -->
         <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
-          <img class="d-block mx-auto partner" src="img/logo-1.png" alt="Partner 1 Logo" height="25">
-        </div>
-
-        <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
-          <img class="d-block mx-auto partner" src="img/logo-2.png" alt="Partner 2 Logo" height="25">
+          <img class="d-block mx-auto partner" src="img/expesh-logo.png" alt="Partner 2 Logo" height="25">
         </div>
 
         <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
@@ -326,10 +337,10 @@
   </section> -->
 
 
-  <div class="container mt-5" >
+  <div class="container my-5">
     <div class="row" data-aos="zoom-out-up">
       <h2 class="hero-title">Services We Offer</h2>
-      <p class="fs-4 pb-5 pb-4">We provide services from tech.</p>
+      <p class="fs-4 pb-5">We provide services from tech.</p>
     </div>
     <div class="row" data-aos="zoom-out-up">
       <div class="col-lg-3">
@@ -338,14 +349,14 @@
       </div>
       <div class="col-lg-7 pt-lg-0 pt-5">
         <h3>WEBSITE DEVELOPMENT</h3>
-        <p>
+        <p class="fs-5">
           We design and develop custom websites that reflect your brand's identity and help you stand out from the
           competition.
         </p>
       </div>
       <div class="col-lg-2">
-          <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0" href="./services/web-sites.html"
-                aria-label="Contact us to discuss your project">Our Work »</a>
+        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0"
+          href="./services/web-sites.html" aria-label="Contact us to discuss your project">Our Work »</a>
       </div>
     </div>
     <div class="row mt-5" data-aos="zoom-out-up">
@@ -355,15 +366,15 @@
       </div>
       <div class="col-lg-7 pt-lg-0 pt-5">
         <h3>MOBILE APPLICATION</h3>
-        <p>
+        <p class="fs-5">
           Develop mobile applications that are user-friendly, intuitive, and designed to meet your business needs.
         </p>
       </div>
       <div class="col-lg-2">
-        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0" href="./services/web-sites.html"
-                aria-label="Contact us to discuss your project">Our Work »</a>
+        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0"
+          href="./services/web-sites.html" aria-label="Contact us to discuss your project">Our Work »</a>
+      </div>
     </div>
-  </div>
     <div class="row mt-5" data-aos="zoom-out-up">
       <div class="col-lg-3">
         <img src="https://hashpotato.io/wp-content/uploads/2024/07/Social-Media-Design.png"
@@ -371,195 +382,52 @@
       </div>
       <div class="col-lg-7 pt-lg-0 pt-5">
         <h3>BLOCKCHAIN SOLUTIONS</h3>
-        <p>Implement secure, innovative blockchain technologies to enhance and empower your business operations.
+        <p class="fs-5">Implement secure, innovative blockchain technologies to enhance and empower your business
+          operations.
         </p>
       </div>
       <div class="col-lg-2">
-        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0" href="./services/web-sites.html"
-                aria-label="Contact us to discuss your project">Our Work »</a>
+        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0"
+          href="./services/web-sites.html" aria-label="Contact us to discuss your project">Our Work »</a>
+      </div>
+    </div>
+    <div class="row mt-5" data-aos="zoom-out-up">
+      <div class="col-lg-3">
+        <img src="https://hashpotato.io/wp-content/uploads/2024/07/Social-Media-Design-3.png"
+          class="img-fluid rounded-pill" width="200px" alt="Branding">
+      </div>
+      <div class="col-lg-7 pt-lg-0 pt-5">
+        <h3>AI SOLUTIONS & AUTOMATION</h3>
+        <p class="fs-5">Integrate advanced AI solutions to automate processes, and deliver personalized experiences.</p>
+      </div>
+      <div class="col-lg-2">
+        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0"
+          href="./services/web-sites.html" aria-label="Contact us to discuss your project">Our Work »</a>
+      </div>
+    </div>
+    <div class="row mt-5" data-aos="zoom-out-up">
+      <div class="col-lg-3">
+        <img src="https://hashpotato.io/wp-content/uploads/2024/07/Social-Media-Design-1.png"
+          class="img-fluid rounded-pill" width="200px" alt="Branding">
+      </div>
+      <div class="col-lg-7 pt-lg-0 pt-5">
+        <h3>Data Entry Services</h3>
+        <p class="fs-5">
+          We provide data entry services to help you manage and organize your data efficiently.
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0"
+          href="./services/data-entry.html" aria-label="Contact us to discuss your project">Our Work »</a>
+      </div>
     </div>
   </div>
-  <div class="row mt-5" data-aos="zoom-out-up">
-    <div class="col-lg-3">
-      <img src="https://hashpotato.io/wp-content/uploads/2024/07/Social-Media-Design-3.png"
-        class="img-fluid rounded-pill" width="200px" alt="Branding">
-    </div>
-    <div class="col-lg-7 pt-lg-0 pt-5">
-      <h3>AI SOLUTIONS & AUTOMATION</h3>
-      <p>Integrate advanced AI solutions to automate processes, and deliver personalized experiences.</p>
-    </div>
-    <div class="col-lg-2">
-      <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0" href="./services/web-sites.html"
-                aria-label="Contact us to discuss your project">Our Work »</a>
-    </div>
-  </div>
-  <div class="row mt-5" data-aos="zoom-out-up">
-    <div class="col-lg-3">
-      <img src="https://hashpotato.io/wp-content/uploads/2024/07/Social-Media-Design-1.png"
-        class="img-fluid rounded-pill" width="200px" alt="Branding">
-    </div>
-    <div class="col-lg-7 pt-lg-0 pt-5">
-      <h3>Data Entry Services</h3>
-      <p>
-        We provide data entry services to help you manage and organize your data efficiently.
-      </p>
-    </div>
-    <div class="col-lg-2">
-      <a class="mt-3 outline-0 border-1 rounded-pill py-2 px-3 bg-primary text-white border-0" href="./services/data-entry.html"
-                aria-label="Contact us to discuss your project">Our Work »</a>
-    </div>
-  </div>
-  </div>
 
 
-  <section class="py-5" aria-labelledby="team-intro">
-    <div class="container py-5">
-      <div class="row">
-        <!-- Title Section -->
-        <div class="col-lg-6">
-          <h2 id="team-intro">We are a dynamic team of creative professionals in Innovation & Marketing.</h2>
-        </div>
-
-        <!-- Description Section -->
-        <div class="col-lg-6">
-          <p class="text-muted">
-            Our team comprises talented professionals with diverse skills and extensive experience in creative design,
-            innovation, and marketing. We are passionate about what we do and are excited to bring that passion to your
-            projects.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pb-5">
-    <div class="container pb-5">
-      <div class="row gy-3">
-        <div class="col-lg-4">
-          <div class="d-flex">
-            <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
-            <div class="ms-3">
-              <h5>Responsive Web Design</h5>
-              <p class="text-sm text-muted">We craft websites that look great on any device, ensuring a seamless user
-                experience.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="d-flex">
-            <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
-            <div class="ms-3">
-              <h5>SEO Optimization</h5>
-              <p class="text-sm text-muted">Our SEO strategies help your website rank higher in search results, driving
-                more traffic to your business.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="d-flex">
-            <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
-            <div class="ms-3">
-              <h5>Custom Web Development</h5>
-              <p class="text-sm text-muted">We develop tailored web solutions that meet your specific business needs and
-                goals.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
-  <section class="pb-5" data-aos="fade-up">
-    <div class="container pb-5">
-      <div class="row">
-        <!-- Website Development -->
-        <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
-          <div class="numeric-block order-2 order-lg-1 mb-lg-5">
-            <div class="numeric-block-count">1</div>
-            <p class="text-muted text-uppercase mb-2">Website Development</p>
-            <h3 data-aos="fade-right">Elevate Your Online Presence</h3>
-            <p class="text-muted py-3">
-              We specialize in creating custom websites that reflect your brand's identity, ensuring a strong online
-              presence that sets you apart from competitors.
-            </p>
-            <a class="btn btn-primary" href="#!">View details</a>
-          </div>
-          <img data-aos="fade-right" class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0"
-            src="img/demo-img-6.jpg" alt="Custom Website Development">
-        </div>
 
-        <!-- Poster Creation -->
-        <div class="col-lg-5 mx-auto d-flex flex-column">
-          <img data-aos="fade-left" class="flex-grow-0 img-fluid shadow rounded mb-5" src="img/demo-img-2.jpg"
-            alt="Creative Poster Design">
-          <div class="numeric-block">
-            <div class="numeric-block-count">2</div>
-            <p class="text-muted text-uppercase mb-2">Poster Creation</p>
-            <h3>Create Impactful Visuals</h3>
-            <p class="text-muted py-3">
-              Our team designs eye-catching posters that effectively convey your message and capture attention, helping
-              you to promote your brand or event with maximum impact.
-            </p>
-            <a class="btn btn-primary" href="#!">View details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- <section class="py-5 bg-primary map-bg text-white">
-    <div class="container text-center">
-      <div class="row mb-4">
-        <div class="col-lg-7 mx-auto" data-aos="fade-up">
-          <p class="h6 text-uppercase">Our Work Process</p>
-          <h2>How We Bring Your Ideas to Life</h2>
-          <p>
-            We are a team of talented professionals with a wide range of skills and experience. We love what we do, and
-            we do it with passion. We look forward to working with you.
-          </p>
-        </div>
-      </div>
-      <div class="row" data-aos="fade-up">
-        <div class="col-lg-4">
-          <div class="card border-0 card-hover-bg">
-            <div class="card-body p-lg-5">
-              <h4>Concept & Planning</h4>
-              <p class="text-sm mb-0">
-                The first step is developing a clear concept. We collaborate with you to bring your ideas into focus,
-                ensuring alignment with your goals.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0 card-hover-bg">
-            <div class="card-body p-lg-5">
-              <h4>Design & Wireframing</h4>
-              <p class="text-sm mb-0">
-                Next, we create wireframes and design layouts to give you a visual representation of your website before
-                development begins.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0 card-hover-bg">
-            <div class="card-body p-lg-5">
-              <h4>Development & Launch</h4>
-              <p class="text-sm mb-0">
-                In the final phase, we build your website according to the wireframe and specifications, ensuring a
-                smooth launch and continued support.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="py-5 bg-primary text-white with-pattern">
+  <section class="py-5 bg-dark bg-primary text-white with-pattern">
     <div class="container py-5">
       <div class="row">
         <div class="col-lg-7 mx-auto text-center">
@@ -686,6 +554,155 @@
       </div>
     </div>
   </section>
+
+
+  <section class="py-5" aria-labelledby="team-intro">
+    <div class="container py-5">
+      <div class="row">
+        <!-- Title Section -->
+        <div class="col-lg-6">
+          <h2 id="team-intro">We are a dynamic team of creative professionals in Innovation & Marketing.</h2>
+        </div>
+
+        <!-- Description Section -->
+        <div class="col-lg-6">
+          <p class="text-muted">
+            Our team comprises talented professionals with diverse skills and extensive experience in creative design,
+            innovation, and marketing. We are passionate about what we do and are excited to bring that passion to your
+            projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container pb-5">
+      <div class="row gy-3">
+        <div class="col-lg-4">
+          <div class="d-flex">
+            <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+            <div class="ms-3">
+              <h5>Responsive Web Design</h5>
+              <p class="text-sm text-muted">We craft websites that look great on any device, ensuring a seamless user
+                experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex">
+            <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+            <div class="ms-3">
+              <h5>SEO Optimization</h5>
+              <p class="text-sm text-muted">Our SEO strategies help your website rank higher in search results, driving
+                more traffic to your business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex">
+            <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+            <div class="ms-3">
+              <h5>Custom Web Development</h5>
+              <p class="text-sm text-muted">We develop tailored web solutions that meet your specific business needs and
+                goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5" data-aos="fade-up">
+    <div class="container pb-5">
+      <div class="row">
+        <!-- Website Development -->
+        <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
+          <div class="numeric-block order-2 order-lg-1 mb-lg-5">
+            <div class="numeric-block-count">1</div>
+            <p class="text-muted text-uppercase mb-2">Website Development</p>
+            <h3 data-aos="fade-right">Elevate Your Online Presence</h3>
+            <p class="text-muted py-3">
+              We specialize in creating custom websites that reflect your brand's identity, ensuring a strong online
+              presence that sets you apart from competitors.
+            </p>
+            <a class="btn btn-primary" href="#!">View details</a>
+          </div>
+          <img data-aos="fade-right" class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0"
+            src="img/demo-img-6.jpg" alt="Custom Website Development">
+        </div>
+
+        <!-- Poster Creation -->
+        <div class="col-lg-5 mx-auto d-flex flex-column">
+          <img data-aos="fade-left" class="flex-grow-0 img-fluid shadow rounded mb-5" src="img/demo-img-2.jpg"
+            alt="Creative Poster Design">
+          <div class="numeric-block">
+            <div class="numeric-block-count">2</div>
+            <p class="text-muted text-uppercase mb-2">Poster Creation</p>
+            <h3>Create Impactful Visuals</h3>
+            <p class="text-muted py-3">
+              Our team designs eye-catching posters that effectively convey your message and capture attention, helping
+              you to promote your brand or event with maximum impact.
+            </p>
+            <a class="btn btn-primary" href="#!">View details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="py-5 bg-primary map-bg text-white">
+    <div class="container text-center">
+      <div class="row mb-4">
+        <div class="col-lg-7 mx-auto" data-aos="fade-up">
+          <p class="h6 text-uppercase">Our Work Process</p>
+          <h2>How We Bring Your Ideas to Life</h2>
+          <p>
+            We are a team of talented professionals with a wide range of skills and experience. We love what we do, and
+            we do it with passion. We look forward to working with you.
+          </p>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-4">
+          <div class="card border-0 card-hover-bg">
+            <div class="card-body p-lg-5">
+              <h4>Concept & Planning</h4>
+              <p class="text-sm mb-0">
+                The first step is developing a clear concept. We collaborate with you to bring your ideas into focus,
+                ensuring alignment with your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0 card-hover-bg">
+            <div class="card-body p-lg-5">
+              <h4>Design & Wireframing</h4>
+              <p class="text-sm mb-0">
+                Next, we create wireframes and design layouts to give you a visual representation of your website before
+                development begins.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0 card-hover-bg">
+            <div class="card-body p-lg-5">
+              <h4>Development & Launch</h4>
+              <p class="text-sm mb-0">
+                In the final phase, we build your website according to the wireframe and specifications, ensuring a
+                smooth launch and continued support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
 
   <!-- <section class="py-5">
     <div class="container pt-5">
@@ -925,6 +942,7 @@
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="js/front.js"></script>
   <script src="js/form-code.js"></script>
+  <script src="js/custom-js.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -951,6 +969,7 @@
       },
     });
   </script>
+
 
   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
