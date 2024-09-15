@@ -9,7 +9,7 @@ import { SVGLogo } from "@/svg/logo";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#" },
-  { name: "About", href: "#" },
+  { name: "About", href: "/about" },
   { name: "Contact", href: "#" },
 ];
 
