@@ -17,7 +17,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <section className="border border-indigo-600">
+    <section className="">
 
     <header className="absolute inset-x-0 top-0 z-50 mx-auto max-w-6xl ">
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">

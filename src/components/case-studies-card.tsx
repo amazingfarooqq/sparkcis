@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 
-export function CaseStudiesCard() {
+export function CaseStudiesCard({img}:{img: string}) {
   return (
     <div className="overflow-hidden bg-white py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -15,12 +15,12 @@ export function CaseStudiesCard() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
                 perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
               </p>
-              <Button className="text-base mt-7 px-10 py-3 h-auto">read more »</Button>
+              <Button className="text-base mt-7 px-10 py-3 h-auto border-r-10">read more »</Button>
             </div>
           </div>
           <img
             alt="Product screenshot"
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            src={img}
             width={2432}
             height={1442}
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"

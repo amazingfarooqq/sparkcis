@@ -16,7 +16,7 @@ export function Hero() {
         />
       </div> */}
 
-      <div className="mx-auto max-w-6xl py-32 sm:py-40 ">
+      <div className="mx-auto max-w-6xl pt-32 pb-20">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Specialists in Advanced Ecommerce Solutions Development{" "}
@@ -35,7 +35,7 @@ export function Hero() {
             technologies, in your timezone.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button className="text-xl px-10 py-3 h-auto">Let{"'"}s talk »</Button>
+            <Button className="text-xl px-10 py-3 h-auto" style={{borderRadius: "80px"}}>Let{"'"}s talk »</Button>
           </div>
         </div>
       </div>

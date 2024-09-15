@@ -4,6 +4,7 @@ export function Footer() {
   return (
 
     <>
+    
       <div className="bg-[#0a0a0a] text-white ">
 
         <div className="mx-auto max-w-6xl ">
