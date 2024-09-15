@@ -1,8 +1,0 @@
-# robots.txt for hhttps://sparkcis.vercel.app/
-
-# Allow all web crawlers access to everything
-User-agent: *
-Disallow:
-
-# Sitemap location
-Sitemap: https://sparkcis.vercel.app/sitemap.xml
