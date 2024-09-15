@@ -1,4 +1,8 @@
-export const SVGLogo = (props: any) => (
+import React from 'react';
+
+type SVGLogoProps = React.SVGProps<SVGSVGElement>;
+
+export const SVGLogo: React.FC<SVGLogoProps> = (props) => (
   <svg width={849} height={344} viewBox="0 0 849 344" fill="none" {...props}>
     <path
       d="M221.314 61.6015C228.911 56.3471 239.348 61.2878 240.1 70.4947L261.018 326.733C261.77 335.94 252.273 342.508 243.924 338.556L11.5554 228.553C3.20611 224.6 2.26657 213.091 9.86422 207.837L221.314 61.6015Z"
