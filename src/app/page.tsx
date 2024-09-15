@@ -2,7 +2,7 @@ import { Testimonials } from "@/components/testimonials";
 import { CaseStudies } from "@/components/case-studies";
 import { Hero } from "@/components/hero";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Hero />
