@@ -1,11 +1,11 @@
 import { Testimonials } from "@/components/testimonials";
 import { CaseStudies } from "@/components/case-studies";
-import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Hero />
       <CaseStudies />
       <Testimonials />
     </>

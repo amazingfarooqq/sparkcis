@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Dialog, DialogPanel } from "@headlessui/react";
 import { Button } from "./ui/button";
 import { SVGLogo } from "@/svg/logo";
+import { useState } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -133,7 +133,7 @@ export function Header() {
               technologies, in your timezone.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button className="text-xl px-10 py-3 h-auto">Let's talk »</Button>
+              <Button className="text-xl px-10 py-3 h-auto">Let{"'"}s talk »</Button>
             </div>
           </div>
         </div>

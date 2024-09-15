@@ -1,12 +1,5 @@
 import { SVGLogo } from "@/svg/logo";
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
-];
-
 export function Footer() {
   return (
     <div className="bg-[#0a0a0a] text-white ">
@@ -20,7 +13,7 @@ export function Footer() {
           </div>
           <div className="pt-7">
             <h2 className=" text-white  text-2xl font-semibold tracking-tight">
-              We collaborate with ambitious brands and people. Let's build. biz@basicagency.com
+              We collaborate with ambitious brands and people. Let{"'"}s build. biz@basicagency.com
             </h2>
           </div>
         </div>
