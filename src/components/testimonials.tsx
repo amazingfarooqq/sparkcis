@@ -6,17 +6,19 @@ export function Testimonials() {
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <img
           alt=""
-          src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
-          className="mx-auto h-12"
+          src="./bizListedlogo.png"
+          className="mx-auto h-14"
         />
         <figure className="mt-10">
           <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
             <p>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa
-              sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+              “Best web development company I have ever worked with. They are very professional and responsive.
+                    They have helped me with my website design and development and I am very happy with the results. I
+                    would recommend them to anyone looking for a reliable and professional web development company.
+                  ”
             </p>
           </blockquote>
-          <figcaption className="mt-10">
+          {/* <figcaption className="mt-10">
             <img
               alt=""
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -35,7 +37,7 @@ export function Testimonials() {
               </svg>
               <div className="text-gray-600">CEO of Workcation</div>
             </div>
-          </figcaption>
+          </figcaption> */}
         </figure>
       </div>
     </section>
