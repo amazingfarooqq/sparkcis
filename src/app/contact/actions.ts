@@ -22,8 +22,6 @@ export async function submitContactForm(data: FormData) {
     throw new Error(JSON.stringify(result.error.flatten().fieldErrors));
   }
 
-  console.log("Form submitted:", result.data);
-
   try {
     await dbConnect();
     await FORM.create(result.data);
