@@ -9,7 +9,7 @@ import { SVGLogo } from "@/svg/logo";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#" },
-  { name: "About", href: "/about" },
+  { name: "About", href: "#" },
   { name: "Contact", href: "#" },
 ];
 
@@ -133,7 +133,7 @@ export function Header() {
               technologies, in your timezone.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button className="text-xl px-10 py-3 h-auto">Let{`'`}s talk »</Button>
+              <Button className="text-xl px-10 py-3 h-auto">Let's talk »</Button>
             </div>
           </div>
         </div>
