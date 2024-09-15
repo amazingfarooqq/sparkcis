@@ -9,9 +9,7 @@ export const dbConnect = async () => {
     return;
   }
   try {
-    await mongoose.connect(process.env.MONGODB_URI ?? "", {
-      dbName: "appointments",
-    });
+    await mongoose.connect(process.env.MONGODB_URI ?? "");
     isConnected = true;
   } catch (error) {
     console.error(error);
