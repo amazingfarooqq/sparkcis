@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export function Hero() {
   return (
-    <section className="relative isolate px-6 lg:px-8 ">
+    <section className="relative isolate px-6 lg:px-8 py-10">
       {/* <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
