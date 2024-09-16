@@ -8,7 +8,7 @@ export function Footer() {
       <div className="bg-[#0a0a0a] text-white ">
 
         <div className="mx-auto max-w-6xl ">
-          <div className="grid grid-cols-2 pt-20 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-20 px-4  gap-5">
             <div>
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Sparkcis</span>

@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="">
       <Hero />
 
-      <div className="h-[200px] bg-black mb-10"></div>
+      <div className="h-[200px] bg-[#21b7b7]  mb-10"></div>
       <CaseStudies />
       <WorkWithUs />
       <Testimonials />
