@@ -1,9 +1,4 @@
-const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
-];
+
 const stats = [
   { name: "Clear and consistent updates throughout the project lifecycle.", value: "Seamless Communication" },
   { name: "Your deadlines are sacred to us. We deliver on time, every time.", value: "Timely Delivery" },

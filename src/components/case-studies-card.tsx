@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 
 export function CaseStudiesCard({img}:{img: string}) {
   return (
@@ -15,7 +14,6 @@ export function CaseStudiesCard({img}:{img: string}) {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
                 perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
               </p>
-              {/* <Button className="text-base mt-7 px-10 py-3 h-auto border-r-10 bg-white">read more »</Button> */}
               <button className="btn mt-5 text-lg">read more »</button>
             </div>
           </div>
