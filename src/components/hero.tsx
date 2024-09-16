@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export function Hero() {
   return (
     <section className="relative isolate px-6 lg:px-8 py-10">
-      {/* <div
+      <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       >
@@ -14,18 +14,14 @@ export function Hero() {
           }}
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#23b5b5] to-[#a0d3d3] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
-      </div> */}
+      </div>
 
-      <div className="mx-auto max-w-6xl pt-32 pb-20">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div className="mx-auto max-w-6xl pt-40 pb-20">
+        {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Specialists in Advanced Ecommerce Solutions Development{" "}
-            {/* <a href="#" className="font-semibold text-indigo-600">
-              <span aria-hidden="true" className="absolute inset-0" />
-              Read more <span aria-hidden="true">&rarr;</span>
-            </a> */}
+            Specialists in Advanced Ecommerce Solutions Development
           </div>
-        </div>
+        </div> */}
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl">
             Be the market leader in your industry
