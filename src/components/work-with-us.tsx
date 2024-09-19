@@ -1,3 +1,4 @@
+import { Button } from "@headlessui/react";
 
 const stats = [
   { name: "Clear and consistent updates throughout the project lifecycle.", value: "Seamless Communication" },
@@ -51,6 +52,8 @@ export default function WorkWithUs() {
               </a>
             ))}
           </div> */}
+
+          
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
@@ -61,6 +64,10 @@ export default function WorkWithUs() {
               </div>
             ))}
           </dl>
+
+          <div className="mt-10">
+            <Button className="text-xl px-10 py-3 h-auto bg-primary text-white " style={{ borderRadius: "10px" }}>Schedule now</Button>
+          </div>
         </div>
       </div>
     </div>
