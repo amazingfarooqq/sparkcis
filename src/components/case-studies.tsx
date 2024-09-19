@@ -1,4 +1,5 @@
 import { CaseStudiesCard } from "./case-studies-card";
+import { Button } from "./ui/button";
 
 export function CaseStudies() {
   return (
@@ -22,6 +23,10 @@ export function CaseStudies() {
         Expesh Learning Community provides online courses for students and professionals. It is a fully functional platform with a user-friendly interface. It has a wide range of courses to choose from and learn. Expesh Learning Community is a one-stop solution for all your learning needs.
       " category="Learning Community"img="/case-study1.png"/>
       <CaseStudiesCard  title="Test" desc="test" category="E Commerce Website" img="/case-study2.png"/>
+
+      <div className="mt-10 flex items-center justify-center gap-x-6">
+            <Button className="text-xl px-40 py-3 h-auto " style={{borderRadius: "10px"}}>Show more</Button>
+          </div>
     </section>
   );
 }
