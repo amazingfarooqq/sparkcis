@@ -19,7 +19,7 @@ export function Hero() {
         </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl">
-            Be the market leader in your industry
+            Be the <span className="text-primary">market leader</span> in your industry
           </h1>
           <p className="mt-6 text-lg max-w-3xl m-auto leading-8 text-gray-600">
             Access 200+ passionate and experienced software engineers with skillsets in 20+

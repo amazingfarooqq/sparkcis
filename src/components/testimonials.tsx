@@ -7,49 +7,26 @@ const testimonials = [
     role: "Founder",
     company: "Landscape Ventures",
     commaColor: "orange",
+    img: ""
   },
   {
-    text: "I use tailwind ui kit almost daily - from quick copy-paste solutions for prototyping, to inspiration in my own designs. The prebuilt components allow for rapid prototyping, saving me hours in pixel perfect design time. Efficient, clean cut, and allround badass!",
+    text: "I use almost daily - from quick copy-paste solutions for prototyping, to inspiration in my own designs. The prebuilt components allow for rapid prototyping, saving me hours in pixel perfect design time. Efficient, clean cut, and allround badass!",
     name: "Cas du Plessis",
     role: "Product guy and problem solver",
     commaColor: "purple",
   },
   {
-    text: "I've been using tailwind ui kit to completely map out entire layouts, but also as a inspiration and as a building block. Taking the ready made designs and hacking them down into what works for me. Having a template and a building block has radically cut down my time to get to where I want with my layouts!",
+    text: "I've been using to completely map out entire layouts, but also as a inspiration and as a building block. Taking the ready made designs and hacking them down into what works for me. Having a template and a building block has radically cut down my time to get to where I want with my layouts!",
     name: "Jonathan Fager",
     role: "IT Product Manager",
     company: "Homebrewer",
     commaColor: "blue",
   },
   {
-    text: "When I bought tailwind ui kit Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
+    text: "When I bought Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
     name: "Linda MacDonald",
     role: "Founder",
     commaColor: "orange",
-  },
-  {
-    text: "When I bought tailwind ui kit Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
-    name: "Linda MacDonald",
-    role: "Founder",
-    commaColor: "orange",
-  },
-  {
-    text: "When I bought tailwind ui kit Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
-    name: "Linda MacDonald",
-    role: "Founder",
-    commaColor: "orange",
-  },
-  {
-    text: "When I bought tailwind ui kit Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
-    name: "Linda MacDonald",
-    role: "Founder",
-    commaColor: "red",
-  },
-  {
-    text: "When I bought tailwind ui kit Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
-    name: "Linda MacDonald",
-    role: "Founder",
-    commaColor: "pink",
   },
 ]
 export function Testimonials() {
@@ -89,7 +66,7 @@ export function Testimonials() {
                   <div>
                     <img
                       src={`https://tuk.dev/img/testimonials/${testimonial.commaColor}-comma.svg`}
-                      alt="tailwind ui kit testimonial"
+                      alt="testimonial"
                     />
                     <p className="2xl:text-lg text-base font-medium leading-7 mt-6 text-gray-700">
                       {testimonial.text}
@@ -99,7 +76,7 @@ export function Testimonials() {
                     <img
                       className="w-10 h-10 rounded-full"
                       src="https://tuk.dev/img/profile-pic/CasduPlesis.png"
-                      alt="tailwind ui kit customer profile image"
+                      alt="customer profile image"
                     />
                     <div className="ml-4">
                       <p className="text-base font-extrabold leading-4 text-gray-600">

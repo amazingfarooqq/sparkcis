@@ -1,14 +1,15 @@
 const stats = [
-    { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-    { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-    { id: 3, name: 'New users annually', value: '46,000' },
+    { id: 1, name: 'Completed projects', value: '120+' },
+    { id: 2, name: 'Active clients', value: '20+' },
+    { id: 3, name: 'On the line', value: '30+' },
+    { id: 4, name: 'Developers', value: '25+' },
 ]
 
 export function NumbersSection() {
     return (
         <div className="bg-primary  py-20 ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
                     {stats.map((stat) => (
                         <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
                             <dt className="text-base leading-7 text-gray-100">{stat.name}</dt>
