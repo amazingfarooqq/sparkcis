@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -25,9 +26,9 @@ export function Hero() {
             Access 200+ passionate and experienced software engineers with skillsets in 20+
             technologies, in your timezone.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <Link href="/contact" className="mt-10 flex items-center justify-center gap-x-6">
             <Button className="text-xl px-10 py-3 h-auto " style={{borderRadius: "80px"}}>Let{"'"}s talk »</Button>
-          </div>
+          </Link>
         </div>
       </div>
       <div
