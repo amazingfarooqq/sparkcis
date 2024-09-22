@@ -27,6 +27,7 @@ const callsToAction = [
 
 const navigation = [
   { name: "Home", href: "/" },
+  { name: "Case Studies", href: "/case-studies" },
   { name: "About", href: "#" },
   { name: "Contact", href: "/contact" },
 ];
@@ -55,7 +56,7 @@ export function Header() {
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-9">
             {navigation.map((item) => (
               <Link
                 key={item.name}
