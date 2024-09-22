@@ -1,4 +1,5 @@
 import { Button } from "@headlessui/react";
+import Link from "next/link";
 
 const stats = [
   { name: "Clear and consistent updates throughout the project lifecycle.", value: "Seamless Communication" },
@@ -65,9 +66,9 @@ export default function WorkWithUs() {
             ))}
           </dl>
 
-          <div className="mt-10">
-            <Button className="text-xl px-10 py-3 h-auto bg-primary text-white " style={{ borderRadius: "10px" }}>Schedule now</Button>
-          </div>
+          <Link href="/contact" className="mt-10 flex ">
+            <Button className="text-xl px-10 py-3 h-auto bg-primary text-white  " style={{borderRadius: "10px"}}>Schedule now »</Button>
+          </Link>
         </div>
       </div>
     </div>
