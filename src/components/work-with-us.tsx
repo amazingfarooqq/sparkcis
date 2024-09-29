@@ -1,4 +1,5 @@
 import { Button } from "@headlessui/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const stats = [
@@ -19,10 +20,12 @@ const stats = [
 export default function WorkWithUs() {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <img
+      <Image
         alt=""
         src="/cover1.avif"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        width={100}
+        height={100}
       />
       <div
         aria-hidden="true"
