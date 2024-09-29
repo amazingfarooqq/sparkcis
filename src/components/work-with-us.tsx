@@ -2,9 +2,18 @@ import { Button } from "@headlessui/react";
 import Link from "next/link";
 
 const stats = [
-  { name: "Clear and consistent updates throughout the project lifecycle.", value: "Seamless Communication" },
-  { name: "Your deadlines are sacred to us. We deliver on time, every time.", value: "Timely Delivery" },
-  { name: "Our relationship doesn’t end at launch. We ensure ongoing support and optimization.", value: "After-Support" },
+  {
+    name: "Clear and consistent updates throughout the project lifecycle.",
+    value: "Seamless Communication",
+  },
+  {
+    name: "Your deadlines are sacred to us. We deliver on time, every time.",
+    value: "Timely Delivery",
+  },
+  {
+    name: "Our relationship doesn’t end at launch. We ensure ongoing support and optimization.",
+    value: "After-Support",
+  },
 ];
 
 export default function WorkWithUs() {
@@ -42,8 +51,16 @@ export default function WorkWithUs() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">At SparkCIS, we don{"’"}t just build websites; we create digital experiences that elevate your brand and engage your customers. With a focus on e-commerce, we leverage the latest in MERN stack, WordPress, and Next.js technologies to deliver solutions that are not only visually stunning but also functionally robust.</p>
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            Work with us
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            At SparkCIS, we don{"’"}t just build websites; we create digital
+            experiences that elevate your brand and engage your customers. We
+            leverage the latest in MERN stack, WordPress, and Next.js
+            technologies to deliver solutions that are not only visually
+            stunning but also functionally robust.
+          </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           {/* <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
@@ -54,11 +71,12 @@ export default function WorkWithUs() {
             ))}
           </div> */}
 
-          
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
-                <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
+                <dt className="text-base leading-7 text-gray-300">
+                  {stat.name}
+                </dt>
                 <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
                   {stat.value}
                 </dd>
@@ -66,8 +84,13 @@ export default function WorkWithUs() {
             ))}
           </dl>
 
-          <Link href="/contact" className="mt-10 flex ">
-            <Button className="text-xl px-10 py-3 h-auto bg-primary text-white  " style={{borderRadius: "10px"}}>Schedule now »</Button>
+          <Link href="/contact" className="mt-10 flex">
+            <Button
+              className="h-auto bg-primary px-10 py-3 text-xl text-white"
+              style={{ borderRadius: "10px" }}
+            >
+              Schedule now »
+            </Button>
           </Link>
         </div>
       </div>

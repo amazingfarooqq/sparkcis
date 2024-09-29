@@ -53,7 +53,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 mt-20">
+    <div className="isolate mt-20 bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -71,12 +71,16 @@ export default function ContactPage() {
           Contact us
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Enter your details and someone from our team will reach out to find a
+          time to connect with you.
         </p>
       </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="mx-auto mt-16 max-w-xl sm:mt-20"
+        >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <FormField
               control={form.control}
@@ -168,12 +172,18 @@ export default function ContactPage() {
           {mutation.isSuccess && (
             <Alert className="mt-10">
               <AlertTitle>Success</AlertTitle>
-              <AlertDescription>Your message has been sent successfully!</AlertDescription>
+              <AlertDescription>
+                Your message has been sent successfully!
+              </AlertDescription>
             </Alert>
           )}
 
           <div className="mt-10">
-            <Button type="submit" className="w-full" disabled={mutation.isPending}>
+            <Button
+              type="submit"
+              className="w-full"
+              disabled={mutation.isPending}
+            >
               {mutation.isPending ? "Submitting..." : "Let's talk"}
             </Button>
           </div>

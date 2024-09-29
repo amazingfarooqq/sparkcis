@@ -1,29 +1,28 @@
 import { SVGLogo } from "@/svg/logo";
+import Link from "next/link";
 
 export function Footer() {
   return (
-
     <>
-    
-      <div className="bg-[#0a0a0a] text-white ">
-
-        <div className="mx-auto max-w-6xl ">
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-20 px-4  gap-5">
+      <div className="bg-[#0a0a0a] text-white">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 gap-5 px-4 pt-20 md:grid-cols-2">
             <div>
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Sparkcis</span>
-                <SVGLogo className="w-[180px] h-[70px] text-white -mt-[10px]" />
+                <SVGLogo className="-mt-[10px] h-[70px] w-[180px] text-white" />
               </a>
             </div>
             <div className="pt-7">
-              <h2 className=" text-white  text-2xl font-semibold tracking-tight">
-                We collaborate with ambitious brands and people. Let{"'"}s build. contact@sparkcis.com
+              <h2 className="text-2xl font-semibold tracking-tight text-white">
+                We collaborate with ambitious brands and people. Let{"'"}s
+                build. contact@sparkcis.com
               </h2>
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl pt-14 pb-16">
-          <div className="grid grid-cols-2  gap-5">
+        <div className="mx-auto max-w-6xl pb-16 pt-14">
+          <div className="grid grid-cols-2 gap-5">
             <div></div>
             <div className="grid grid-cols-2">
               <div>
@@ -47,14 +46,12 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl py-4 border-white/50 border-t">
-          <p className="text-center text-xs opacity-70 ">
-            The king, seeing how much happier his subjects were, realized the error of his ways and
-            repealed the joke tax.
+        <div className="mx-auto max-w-6xl border-t border-white/50 py-4">
+          <p className="text-center text-xs opacity-70">
+            Copyright © 2024 - <Link href="sparkcis.com">Sparkcis</Link>
           </p>
         </div>
       </div>
-
     </>
   );
 }
