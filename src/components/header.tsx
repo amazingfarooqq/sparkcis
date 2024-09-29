@@ -1,29 +1,41 @@
 "use client";
 
-import { Bars3Icon, DevicePhoneMobileIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  DevicePhoneMobileIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { SVGLogo } from "@/svg/logo";
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
-import { ChevronDownIcon, GlobeAmericasIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-} from '@heroicons/react/24/outline'
+  ChevronDownIcon,
+  GlobeAmericasIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/20/solid";
 
 const solutions = [
-  { name: 'Web Development', description: 'Craft compelling digital experiences.', href: '#', icon: GlobeAmericasIcon },
-  { name: 'Mobile Application', description: 'Build seamless mobile apps for on-the-go engagement.', href: '#', icon: DevicePhoneMobileIcon },
-]
+  {
+    name: "Web Development",
+    description: "Craft compelling digital experiences.",
+    href: "#",
+    icon: GlobeAmericasIcon,
+  },
+  {
+    name: "Mobile Application",
+    description: "Build seamless mobile apps for on-the-go engagement.",
+    href: "#",
+    icon: DevicePhoneMobileIcon,
+  },
+];
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '/contact', icon: PhoneIcon },
-]
+  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
+  { name: "Contact sales", href: "/contact", icon: PhoneIcon },
+];
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -36,13 +48,15 @@ export function Header() {
 
   return (
     <section className="">
-
-      <header className="absolute inset-x-0 top-0 z-50 mx-auto max-w-6xl ">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+      <header className="absolute inset-x-0 top-0 z-50 mx-auto max-w-6xl">
+        <nav
+          aria-label="Global"
+          className="flex items-center justify-between p-6 lg:px-8"
+        >
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Sparkcis</span>
-              <SVGLogo className="w-[140px] h-[55px] -mt-[10px]" />
+              <SVGLogo className="-mt-[10px] h-[55px] w-[140px]" />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -78,16 +92,27 @@ export function Header() {
                 <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="p-4">
                     {solutions.map((item) => (
-                      <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                      <div
+                        key={item.name}
+                        className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                      >
                         <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                          <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-primary" />
+                          <item.icon
+                            aria-hidden="true"
+                            className="h-6 w-6 text-gray-600 group-hover:text-primary"
+                          />
                         </div>
                         <div>
-                          <a href={item.href} className="font-semibold text-gray-900">
+                          <a
+                            href={item.href}
+                            className="font-semibold text-gray-900"
+                          >
                             {item.name}
                             <span className="absolute inset-0" />
                           </a>
-                          <p className="mt-1 text-gray-600">{item.description}</p>
+                          <p className="mt-1 text-gray-600">
+                            {item.description}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -99,7 +124,10 @@ export function Header() {
                         href={item.href}
                         className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                       >
-                        <item.icon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
+                        <item.icon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-none text-gray-400"
+                        />
                         {item.name}
                       </a>
                     ))}
@@ -109,20 +137,25 @@ export function Header() {
             </Popover>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
-              <Button className="w-full">
-                Schedule free strategy call →
-              </Button>
+            <Link
+              href="/contact"
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
+              <Button className="w-full">Schedule free strategy call →</Button>
             </Link>
           </div>
         </nav>
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <Dialog
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
+        >
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Sparkcis</span>
-                <SVGLogo className="w-[140px] h-[55px] -mt-[10px]" />
+                <SVGLogo className="-mt-[10px] h-[55px] w-[140px]" />
               </Link>
               <button
                 type="button"
@@ -158,16 +191,27 @@ export function Header() {
                       <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                         <div className="p-4">
                           {solutions.map((item) => (
-                            <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                            <div
+                              key={item.name}
+                              className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                            >
                               <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-primary" />
+                                <item.icon
+                                  aria-hidden="true"
+                                  className="h-6 w-6 text-gray-600 group-hover:text-primary"
+                                />
                               </div>
                               <div>
-                                <a href={item.href} className="font-semibold text-gray-900">
+                                <a
+                                  href={item.href}
+                                  className="font-semibold text-gray-900"
+                                >
                                   {item.name}
                                   <span className="absolute inset-0" />
                                 </a>
-                                <p className="mt-1 text-gray-600">{item.description}</p>
+                                <p className="mt-1 text-gray-600">
+                                  {item.description}
+                                </p>
                               </div>
                             </div>
                           ))}
@@ -179,7 +223,10 @@ export function Header() {
                               href={item.href}
                               className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                             >
-                              <item.icon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
+                              <item.icon
+                                aria-hidden="true"
+                                className="h-5 w-5 flex-none text-gray-400"
+                              />
                               {item.name}
                             </a>
                           ))}
