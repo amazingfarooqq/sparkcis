@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import type { Metadata } from "next";
 import "./globals.css";
 import { QueryClientProvider } from "@/providers/query-client-provider";
-import Loading from "@/components/Loading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,10 +18,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'SparkCIS - Expert Web Development & Full-Scale eCommerce Solutions',
-  description: "SparkCIS offers cutting-edge web development services using MERN, WordPress, and Next.js. We specialize in building custom eCommerce platforms tailored to your business needs, driving growth and success in the digital world."
-}
-
+  title: "SparkCIS - Expert Web Development & Full-Scale eCommerce Solutions",
+  description:
+    "SparkCIS offers cutting-edge web development services using MERN, WordPress, and Next.js. We specialize in building custom eCommerce platforms tailored to your business needs, driving growth and success in the digital world.",
+};
 
 export default function RootLayout({
   children,
@@ -31,10 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <QueryClientProvider>
           <Header />
-          <Loading />
           {children}
           <Footer />
         </QueryClientProvider>
