@@ -3,6 +3,7 @@ import { CaseStudies } from "@/components/case-studies";
 import { Hero } from "@/components/hero";
 import WorkWithUs from "@/components/work-with-us";
 import { NumbersSection } from "@/components/numbers-section";
+import WebDevService from "@/components/web-dev-service";
 
 export default function HomePage() {
   return (
@@ -10,10 +11,10 @@ export default function HomePage() {
       <Hero />
 
       <NumbersSection />
+      <WebDevService />
       <CaseStudies />
       <WorkWithUs />
       <Testimonials />
-
       
 
     </div>
