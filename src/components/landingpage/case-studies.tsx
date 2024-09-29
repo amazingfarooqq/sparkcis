@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { CaseStudiesCard } from "./case-studies-card";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 export function CaseStudies() {
   return (
-    <section className="my-24">
-      <div className="mx-auto mb-10 max-w-2xl sm:text-center">
+    <section className="py-24 ">
+      <div className="mx-auto mb-10 max-w-2xl sm:text-center ">
         <h2 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Our Succesful Work History
         </h2>

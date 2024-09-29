@@ -1,5 +1,5 @@
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Header } from "@/components/portfolio/header";
+import { Footer } from "@/components/landingpage/footer";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -19,8 +19,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'SparkCIS - Expert Web Development & Full-Scale eCommerce Solutions',
-  description: "SparkCIS offers cutting-edge web development services using MERN, WordPress, and Next.js. We specialize in building custom eCommerce platforms tailored to your business needs, driving growth and success in the digital world."
+  title: 'Farooq Dad - Web Developer',
+  description: "Experienced Web Developer, actively contributing to the tech community through open-source projects, content creation, public speaking, and mentorship.",
+  
 }
 
 
@@ -31,12 +32,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <head>
+        <link rel="shortcuticon" href="/profile.png" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-pink-100 via-white to-pink-100`}>
         <QueryClientProvider>
-          <Header />
-          <Loading />
+          {/* <Loading /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </QueryClientProvider>
       </body>
     </html>
