@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export function Hero() {
   return (
     <section className="relative isolate px-6 py-10 lg:px-8">
-      <div
+      {/* <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       >
@@ -14,9 +14,9 @@ export function Hero() {
           }}
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#23b5b5] to-[#a0d3d3] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
-      </div>
+      </div> */}
 
-      <div className="mx-auto max-w-5xl pb-20 pt-40">
+      <div className="mx-auto max-w-6xl  pb-20 pt-40">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Professional websites that establish credibility
@@ -24,10 +24,10 @@ export function Hero() {
         </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl">
-            We create your <span className="text-primary">business</span>{" "}
+            We will create  <span className="text-primary">your business</span>{" "}
             website
           </h1>
-          <p className="m-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+          <p className="m-auto mt-6 max-w-5xl text-lg leading-8 text-gray-600">
             Companies with websites experience up to 200% more lead generation
             than those without. Whether you’re a small business, a local shop,
             or an established company, having a website is the first step to
