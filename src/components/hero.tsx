@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -34,12 +35,12 @@ export function Hero() {
             making your mark online.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button
-              className="h-auto px-10 py-3 text-xl"
-              style={{ borderRadius: "80px" }}
-            >
-              Let{"'"}s talk »
-            </Button>
+            <Link href="/contact">
+              <button className="bg-primary mt-3 text-white hover:bg-teal-500  font-bold py-4 px-10 rounded-full text-3xl transition duration-300">
+                Lets talk »
+              </button>
+
+            </Link>
           </div>
         </div>
       </div>
