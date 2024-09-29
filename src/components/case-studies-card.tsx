@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export function CaseStudiesCard({category, title, desc, img}:{category:string, title:string, desc:string, img: string}) {
   return (
@@ -16,12 +17,13 @@ export function CaseStudiesCard({category, title, desc, img}:{category:string, t
               {/* <button className="btn mt-5 text-lg">read more »</button> */}
             </div>
           </div>
-          <img
+          
+          <Image
             alt="Product screenshot"
             src={img}
             width={2432}
             height={1442}
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            className="rotate-1 w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
           />
         </div>
       </div>
