@@ -1,31 +1,31 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 const testimonials = [
   {
-    text: "Absolutely love this kit guys, you've done an incredible job and it's saved me countless hours in getting my V1 out Keep up the amazing work! ",
-    name: "Joe Perkins",
+    text: "SparkCIS truly transformed our restaurant’s online presence. We needed a simple, elegant website to showcase our menu and allow online reservations. The team was fast, efficient, and their design was spot on. We've seen a 40% increase in reservations since launching the site! SparkCIS knows how to create functional yet beautiful websites that deliver results ",
+    name: "Ahmed Khan",
     role: "Founder",
     company: "Landscape Ventures",
     commaColor: "orange",
     img: "",
   },
   {
-    text: "I use almost daily - from quick copy-paste solutions for prototyping, to inspiration in my own designs. The prebuilt components allow for rapid prototyping, saving me hours in pixel perfect design time. Efficient, clean cut, and allround badass!",
-    name: "Cas du Plessis",
+    text: "Working with SparkCIS on our e-commerce website was a game changer. From seamless product pages to secure payment gateways, they delivered a platform that’s easy to use for both us and our customers. Our sales have doubled since we launched, and we couldn't be happier. Their team really understands how to build a website that drives conversions",
+    name: "Fatima Iqbal",
     role: "Product guy and problem solver",
     commaColor: "purple",
   },
   {
-    text: "I've been using to completely map out entire layouts, but also as a inspiration and as a building block. Taking the ready made designs and hacking them down into what works for me. Having a template and a building block has radically cut down my time to get to where I want with my layouts!",
-    name: "Jonathan Fager",
+    text: "We approached SparkCIS to create a website that could showcase our clinic's services, doctor profiles, and make it easy for patients to book appointments. The team was amazing—they understood the healthcare industry and delivered a professional, secure website that’s easy to navigate. We’ve received a lot of positive feedback from our patients and now have a reliable digital presence.",
+    name: "Dr. Sameer Malik",
     role: "IT Product Manager",
     company: "Homebrewer",
     commaColor: "blue",
   },
   {
-    text: "When I bought Tailwind, I thought I would have to be a sort of beta tester given the pricepoint. However I kid you not it is FLAWLESS and so is their support. EVERYTHING you would ever want is in here and each component is crafted to the highest design-standard - including responsiveness.",
-    name: "Linda MacDonald",
+    text: "We wanted a website that could act as an online portfolio for our construction projects and allow potential clients to reach out easily. SparkCIS built exactly what we needed, with an impressive design that highlighted our work. The attention to detail was fantastic. We’ve gained several new clients who found us through our new website. It’s been a big success",
+    name: " Ali Saeed",
     role: "Founder",
     commaColor: "orange",
   },
@@ -49,51 +49,57 @@ export function Testimonials() {
             className="relative left-[calc(80%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#23b5b5] to-[#a0d3d3] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div
+        {/* <div
           className="placeholder2 absolute hidden h-full w-full dark:block"
           data-large="https://tuk-cdn.s3.amazonaws.com/assets/gradients/faq_bg-gradient.png"
         >
-          <img
+          <Image
             src="https://tuk-cdn.s3.amazonaws.com/assets/gradients/faq_bg-gradient.png"
             className="img-small2 loaded h-full w-full"
             alt="gradient image"
+            width={30}
+            height={30}
           />
-          <img
+          <Image
             src="https://tuk-cdn.s3.amazonaws.com/assets/gradients/faq_bg-gradient.png"
             className="loaded absolute inset-0 h-full max-h-full w-full"
             alt="gradient image"
+            width={30}
+            height={30}
           />
-        </div>
+        </div> */}
         <h3 className="wordfromclient t-f-c relative z-20 bg-clip-text pb-1.5 text-center text-3xl font-extrabold leading-tight text-primary md:text-5xl md:leading-tight lg:leading-tight 2xl:text-5xl">
           Over 1000+ happy customers
         </h3>
         <div className="container relative z-20 mx-auto mt-16 grid gap-8 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:px-10 xl:mt-[82px] xl:grid-cols-4 2xl:px-4">
           {testimonials.map((testimonial, index) => (
             <div key={index}>
-              <div className="testimonialSectionCard h-full rounded-2xl border-4 border-gray-500 border-opacity-20 px-4 py-6 dark:border-opacity-10 2xl:h-[482px] 2xl:p-6">
+              <div className=" h-full rounded-2xl border-4 border-gray-500 border-opacity-20 px-4 py-6 dark:border-opacity-10 2xl:p-6">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <img
+                    <Image
                       src={`https://tuk.dev/img/testimonials/${testimonial.commaColor}-comma.svg`}
                       alt="testimonial"
+                      width={30}
+                      height={30}
                     />
                     <p className="mt-6 text-base font-medium leading-7 text-gray-700 2xl:text-lg">
                       {testimonial.text}
                     </p>
                   </div>
                   <div className="mt-10 flex items-center">
-                    <img
+                    {/* <img
                       className="h-10 w-10 rounded-full"
                       src="https://tuk.dev/img/profile-pic/CasduPlesis.png"
                       alt="customer profile image"
-                    />
+                    /> */}
                     <div className="ml-4">
                       <p className="text-base font-extrabold leading-4 text-gray-600">
                         {testimonial.name}
                       </p>
                       <p className="mt-2 text-sm font-light leading-none text-gray-600 dark:text-white">
-                        <span>{testimonial.role}</span>
-                        {testimonial.company ? ` - ${testimonial.company}` : ""}
+                        {/* <span>{testimonial.role}</span> */}
+                        {/* {testimonial.company ? ` - ${testimonial.company}` : ""} */}
                       </p>
                     </div>
                   </div>
@@ -117,28 +123,51 @@ export function Testimonials() {
         </div>
       </section>
 
-      <section aria-label="Get started for free" className="bg-primary py-32">
-        <h3 className="mb-4 text-center text-4xl font-bold text-white md:text-5xl">
-          Schedule a free{" "}
-          <span className="">
-            consultation <br /> with one{" "}
-          </span>
-          of our experts.
-        </h3>
-        <div className="mt-7 flex w-full flex-col items-center justify-center md:w-auto">
-          <Link href="/contact">
-            <Button
-              className="h-auto bg-white px-10 py-3 text-xl text-black hover:bg-slate-200 hover:text-black"
-              style={{ borderRadius: "10px" }}
-            >
-              Schedule now »
-            </Button>
-          </Link>
-          <p className="mt-2 text-xs leading-4 text-white lg:mt-3 lg:text-base">
+      <div className="py-40 bg-gray-900 text-white p-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              Schedule Free 30 <br /> minute Strategy Call <br /> with one of our expert.
+            </h1>
+            {/* <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+              Take the first step towards a brighter future and supercharge your business with cutting-edge technologies,
+              expert guidance, and unparalleled support.
+            </p> */}
+            <Link href="/contact">
+              <button className="bg-primary mt-3 text-white hover:bg-teal-500  font-bold py-4 px-10 rounded-full text-3xl transition duration-300">
+                Schedule now »
+              </button>
+
+            </Link>
+            <p className="mt-2 text-xs leading-4 text-white lg:mt-3 lg:text-base">
             Fix a free strategy call with our experts
           </p>
+          </div>
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Image
+              src="/case-study1.png"
+              alt="Team working in an office"
+              width={400}
+              height={200}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+            <Image
+              src="/case-study2.png"
+              alt="People collaborating on a project"
+              width={400}
+              height={200}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+            <Image
+              src="/cover1.avif"
+              alt="Developers coding together"
+              width={400}
+              height={200}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+          </div> */}
         </div>
-      </section>
+      </div>
     </>
   );
 }
