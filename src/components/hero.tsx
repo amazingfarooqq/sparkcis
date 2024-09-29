@@ -16,10 +16,10 @@ export function Hero() {
         />
       </div>
 
-      <div className="mx-auto max-w-6xl pb-20 pt-40">
+      <div className="mx-auto max-w-5xl pb-20 pt-40">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            We create websites and Mobile applications
+            Professional websites that establish credibility
           </div>
         </div>
         <div className="text-center">
@@ -28,8 +28,10 @@ export function Hero() {
             website
           </h1>
           <p className="m-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            Access 200+ passionate and experienced software engineers with
-            skillsets in 20+ technologies, in your timezone.
+            Companies with websites experience up to 200% more lead generation
+            than those without. Whether you’re a small business, a local shop,
+            or an established company, having a website is the first step to
+            making your mark online.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button
