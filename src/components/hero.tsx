@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative isolate px-6 py-10 lg:px-8">
+    <section className="relative isolate px-6 py-3 lg:px-8">
       {/* <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -23,10 +23,10 @@ export function Hero() {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl">
             We will create  <span className="text-primary">your business</span>{" "}
             website
-          </h1>
+          </h2>
           <p className="m-auto mt-6 max-w-5xl text-lg leading-8 text-gray-600">
             Companies with websites experience up to 200% more lead generation
             than those without. Whether you’re a small business, a local shop,

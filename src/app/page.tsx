@@ -3,13 +3,14 @@ import { CaseStudies } from "@/components/case-studies";
 import { Hero } from "@/components/hero";
 import WorkWithUs from "@/components/work-with-us";
 import WebDevService from "@/components/web-dev-service";
+import { NumbersSection } from "@/components/numbers-section";
 
 export default function HomePage() {
   return (
     <div className="">
       <Hero />
 
-      {/* <NumbersSection /> */}
+      <NumbersSection />
       <WebDevService />
       <CaseStudies />
       <WorkWithUs />

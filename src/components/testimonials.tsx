@@ -126,9 +126,9 @@ export function Testimonials() {
       <div className="py-40 bg-gray-900 text-white p-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Schedule Free 30 <br /> minute Strategy Call <br /> with one of our expert.
-            </h1>
+            </h2>
             {/* <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
               Take the first step towards a brighter future and supercharge your business with cutting-edge technologies,
               expert guidance, and unparalleled support.
