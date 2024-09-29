@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 const testimonials = [
   {
-    text: "Absolutely love this kit guys, you've done an incredible job and it's saved me countless hours in getting my V1 out Keep up the amazing work! ",
+    text: "Absolutely love this kit guys, you've done an incredible job and it's saved me countless hours in getting my V1 out Keep up the amazing work!",
     name: "Joe Perkins",
     role: "Founder",
     company: "Landscape Ventures",
@@ -60,7 +59,7 @@ export function Testimonials() {
           Over 1000+ happy customers
         </h3>
         <div className="relative z-20 mx-auto container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 xl:mt-[82px] mt-16 2xl:px-4 lg:px-10 px-4">
-          {testimonials.map((testimonial, index) => (
+          {testimonials .map((testimonial, index) => (
             <div key={index}>
               <div className="testimonialSectionCard 2xl:h-[482px] border-4 border-gray-500 dark:border-opacity-10 border-opacity-20 rounded-2xl 2xl:p-6 px-4 py-6 h-full">
                 <div className="flex flex-col h-full justify-between">
@@ -110,16 +109,14 @@ export function Testimonials() {
       <section aria-label="Get started for free"
         className="py-12 pb-40 bg-"
       >
-        <h3 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          Schedule a free <span className="text-primary">consultation <br /> with one </span>
+       <h3 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+       Schedule a free <span className="text-primary">consultation <br /> with one </span>
           of our experts.
         </h3>
         <div className="flex flex-col items-center justify-center mt-16 md:w-auto w-full">
-
-
-          <Link href="/contact">
-            <Button className="text-xl px-10 py-3 h-auto " style={{ borderRadius: "10px" }}>Schedule now »</Button>
-          </Link>
+          <div className=" flex items-center justify-center gap-x-6">
+            <Button className="text-xl px-10 py-3 h-auto " style={{ borderRadius: "10px" }}>Schedule now</Button>
+          </div>
           <p className="lg:text-base text-xs leading-4 lg:mt-3 mt-2 text-gray-400">
             Fix a free strategy call with our experts
           </p>
