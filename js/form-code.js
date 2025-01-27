@@ -1,8 +1,8 @@
+// Select the form and notification elements
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxOv-sRrPq67Ribzln8u372JuYS4KbeXNglqnmqHHPSfswe5jnaohtC-aCps3Tabm_V/exec';
 const form = document.forms['contact-form'];
 const notification = document.getElementById("notification-success");
 const notificationError = document.getElementById("notification-error");
-const modal = new bootstrap.Modal(document.getElementById('quoteForm'));
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -16,6 +16,7 @@ form.addEventListener('submit', e => {
     // Add submission time to form data
     formData.append('submissiontime', currentTime);
     
+    // Change button text to show loading state
     document.getElementById("submit").innerHTML = "Submitting...";
     
     fetch(scriptURL, {
@@ -23,25 +24,31 @@ form.addEventListener('submit', e => {
         body: formData
     })
     .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         console.log('Success!', response);
-        // Trigger the slide-down notification
+        
+        // Show success notification
         notification.classList.add('show');
-        // Hide the notification after 5 seconds
         setTimeout(() => {
             notification.classList.remove('show');
         }, 5000);
+        
+        // Reset form and button text
         form.reset();
-        modal.hide();
-        document.getElementById("submit").innerHTML = "Submit your request";
+        document.getElementById("submit").innerHTML = "Submit your response";
     })
     .catch(error => {
-        // Trigger the slide-down notification
+        console.error('Error!', error.message);
+        
+        // Show error notification
         notificationError.classList.add('show');
-        // Hide the notification after 5 seconds
         setTimeout(() => {
             notificationError.classList.remove('show');
         }, 5000);
-        console.error('Error!', error.message);
-        document.getElementById("submit").innerHTML = "Submit your request";
+        
+        // Reset button text
+        document.getElementById("submit").innerHTML = "Submit your response";
     });
 });
