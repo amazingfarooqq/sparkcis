@@ -1,46 +1,39 @@
-// Select the form and notification elements
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxOv-sRrPq67Ribzln8u372JuYS4KbeXNglqnmqHHPSfswe5jnaohtC-aCps3Tabm_V/exec';
 const form = document.forms['contact-form'];
 const notification = document.getElementById("notification-success");
 const notificationError = document.getElementById("notification-error");
 
-// Function to format date in a readable format
-function getFormattedDateTime() {
-    const now = new Date();
-    return now.toLocaleString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true
-    });
-}
-
-form.addEventListener('submit', e => {
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
     
-    // Get formatted timestamp
-    const formattedTime = getFormattedDateTime();
-    
-    // Create FormData object
-    const formData = new FormData(form);
-    
-    // Add submission time to form data
-    formData.append('submissiontime', formattedTime);
-    
-    // Change button text to show loading state
-    document.getElementById("submit").innerHTML = "Submitting...";
-    
-    fetch(scriptURL, {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
+    try {
+        // Get current timestamp
+        const currentTime = new Date().toISOString();
+        
+        // Get user's country
+        const countryResponse = await fetch('https://ipapi.co/json/');
+        const locationData = await countryResponse.json();
+        const userCountry = locationData.country_name || 'Unknown';
+        
+        // Create FormData object
+        const formData = new FormData(form);
+        
+        // Add submission time and country to form data
+        formData.append('submissiontime', currentTime);
+        formData.append('country', userCountry);
+        
+        // Change button text to show loading state
+        document.getElementById("submit").innerHTML = "Submitting...";
+        
+        const response = await fetch(scriptURL, {
+            method: 'POST',
+            body: formData
+        });
+        
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
+        
         console.log('Success!', response);
         
         // Show success notification
@@ -52,8 +45,8 @@ form.addEventListener('submit', e => {
         // Reset form and button text
         form.reset();
         document.getElementById("submit").innerHTML = "Submit your response";
-    })
-    .catch(error => {
+        
+    } catch (error) {
         console.error('Error!', error.message);
         
         // Show error notification
@@ -64,5 +57,5 @@ form.addEventListener('submit', e => {
         
         // Reset button text
         document.getElementById("submit").innerHTML = "Submit your response";
-    });
+    }
 });
