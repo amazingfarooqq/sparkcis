@@ -5,36 +5,43 @@ const notificationError = document.getElementById("notification-error");
 const modal = new bootstrap.Modal(document.getElementById('quoteForm'));
 
 form.addEventListener('submit', e => {
-  e.preventDefault();
-  document.getElementById("submit").innerHTML = "Submitting...";
-
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    e.preventDefault();
+    
+    // Get current timestamp
+    const currentTime = new Date().toISOString();
+    
+    // Create FormData object
+    const formData = new FormData(form);
+    
+    // Add submission time to form data
+    formData.append('submissiontime', currentTime);
+    
+    document.getElementById("submit").innerHTML = "Submitting...";
+    
+    fetch(scriptURL, {
+        method: 'POST',
+        body: formData
+    })
     .then(response => {
-      console.log('Success!', response);
-
-      // Trigger the slide-down notification
-      notification.classList.add('show');
-
-      // Hide the notification after 5 seconds
-      setTimeout(() => {
-        notification.classList.remove('show');
-      }, 5000);
-
-
-      form.reset();
-      modal.hide();
-
-      document.getElementById("submit").innerHTML = "Submit your request";
+        console.log('Success!', response);
+        // Trigger the slide-down notification
+        notification.classList.add('show');
+        // Hide the notification after 5 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 5000);
+        form.reset();
+        modal.hide();
+        document.getElementById("submit").innerHTML = "Submit your request";
     })
     .catch(error => {
-      // Trigger the slide-down notification
-      notificationError.classList.add('show');
-
-      // Hide the notification after 5 seconds
-      setTimeout(() => {
-        notificationError.classList.remove('show');
-      }, 5000);
-      console.error('Error!', error.message);
-      document.getElementById("submit").innerHTML = "Submit your request";
+        // Trigger the slide-down notification
+        notificationError.classList.add('show');
+        // Hide the notification after 5 seconds
+        setTimeout(() => {
+            notificationError.classList.remove('show');
+        }, 5000);
+        console.error('Error!', error.message);
+        document.getElementById("submit").innerHTML = "Submit your request";
     });
 });
