@@ -10,16 +10,9 @@ form.addEventListener('submit', async (e) => {
         // Get current timestamp
         const currentTime = new Date().toISOString();
         
-        // Get user's country
-        const countryResponse = await fetch('https://ipapi.co/json/');
-        const locationData = await countryResponse.json();
-        const userCountry = locationData.country_name || 'Unknown';
-        
         // Create FormData object
         const formData = new FormData(form);
         
-        // Add submission time and country to form data
-        formData.append('submissiontime', currentTime);
         formData.append('country', userCountry);
         
         // Change button text to show loading state
