@@ -157,8 +157,10 @@
                         <textarea class="form-control py-1 fs-2" id="projectdetail" rows="5" name="projectdetail"
                           required></textarea>
                       </div>
+                      <input  id="submissiontime" name="submissiontime" type="text" style="display: none" value="" onload="this.value = new Date().toISOString().split('T')[0];">
+
                       <div class="col-lg-12 mt-5 text-center">
-                        <button class="btn btn-primary fs-3" type="submit" id="submit">Submit your response</button>
+                        <button class="btn btn-primary fs-3" type="submit" id="submit">Submit your response.</button>
                       </div>
                     </div>
                   </form>
