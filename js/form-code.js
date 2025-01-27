@@ -4,17 +4,31 @@ const form = document.forms['contact-form'];
 const notification = document.getElementById("notification-success");
 const notificationError = document.getElementById("notification-error");
 
+// Function to format date in a readable format
+function getFormattedDateTime() {
+    const now = new Date();
+    return now.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    });
+}
+
 form.addEventListener('submit', e => {
     e.preventDefault();
     
-    // Get current timestamp
-    const currentTime = new Date().toISOString();
+    // Get formatted timestamp
+    const formattedTime = getFormattedDateTime();
     
     // Create FormData object
     const formData = new FormData(form);
     
     // Add submission time to form data
-    formData.append('submissiontime', currentTime);
+    formData.append('submissiontime', formattedTime);
     
     // Change button text to show loading state
     document.getElementById("submit").innerHTML = "Submitting...";
